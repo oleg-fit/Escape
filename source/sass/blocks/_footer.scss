@@ -1,0 +1,108 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+
+  padding-bottom: 24px;
+
+  width: 100%;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__inner__list {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.footer__list-item {
+  margin-right: 7px;
+}
+
+.footer__list-link {
+  display: block;
+
+  height: 28px;
+  width: 28px;
+}
+
+.footer__list-link--insta {
+  background-image: url(../img/instagram-default.png);
+
+  transition: all 0.1s linear;
+}
+
+.footer__list-link--insta:hover,
+.footer__list-link--insta:focus {
+  background-image: url(../img/instagram-hover.png);
+}
+
+.footer__list-link--insta:active {
+  opacity: 0.5;
+}
+
+.footer__list-link--vk {
+  background-image: url(../img/vk-default.png);
+
+  transition: all 0.1s linear;
+}
+
+.footer__list-link--vk:hover,
+.footer__list-link--vk:focus {
+  background-image: url(../img/vk-hover.png);
+}
+
+.footer__list-link--vk:active {
+  opacity: 0.5;
+}
+
+.footer__text-question {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 500;
+  font-size: 12px;
+
+  color: $color-white-dark;
+
+  border-bottom: 1px dashed $color-white-dark;
+
+  transition: all 0.1s linear;
+}
+
+.footer__text-question:hover,
+.footer__text-question:focus {
+  color: $color-orange;
+
+  border-bottom-color: $color-orange;
+}
+
+.footer__text-question:active{
+  border-bottom-style: solid;
+}
+
+.footer__text-question span {
+  display: none;
+
+  transition: all 0.1s linear;
+}
+
+.footer__text-question:hover span,
+.footer__text-question:focus span {
+  display: inline-block;
+}
+
+/* =====================================================================================
+Media max-width: 767px*/
+@media (max-width: $mobile-width) {
+  footer {
+    display: none;
+  }
+}

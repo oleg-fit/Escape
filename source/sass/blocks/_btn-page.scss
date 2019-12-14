@@ -1,0 +1,30 @@
+.btn-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 65px;
+  max-width: 250px;
+  width: 100%;
+
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color-white;
+
+  border-radius: 65px;
+  background-color: $color-orange;
+
+  transition: all 0.1s linear;
+}
+
+.btn-page:hover,
+.btn-page:focus {
+  background-color: $color-orange-light;
+}
+
+.btn-page:active {
+  background-color: rgba($color-orange-light, 0.7);
+}
+

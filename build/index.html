@@ -4,10 +4,130 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <link rel="preload" href="/fonts/PTSansNarrow.woff2" as="font"> -->
+  <script src="js/picturefill.js" async=""></script>
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
   <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800&display=swap" rel="stylesheet">
 </head>
-<body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+<body class="intro-page">
+
+
+  <header class="intro-page__header header">
+    <div class="container">
+      <div class="header__inner">
+
+        <a class="header__link" href="index.html">
+          <picture>
+            <source media="(max-width: 1023px)" srcset="img/logo-header-mobile.svg">
+            <img class="header__logo-img" alt="логотип Escape Room" src="img/logo-header-desktop.svg" width="134" height="50">
+          </picture>
+        </a>
+
+        <a class="header__burger" href="#">
+          МЕНЮ
+        </a>
+
+        <nav class="header__main-nav main-nav">
+          <ul class="main-nav__list">
+
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link" href="#">
+                КВЕСТЫ
+              </a>
+            </li>
+
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link" href="#">
+                НОВИЧКАМ
+              </a>
+            </li>
+
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link" href="#">
+                ОТЗЫВЫ
+              </a>
+            </li>
+
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link" href="#">
+                АКЦИИ
+              </a>
+            </li>
+
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link" href="#">
+                КОНТАКТЫ
+              </a>
+            </li>
+
+          </ul>  <!--/.main-nav__list -->
+        </nav>  <!--/.main-nav -->
+
+        <div class="header__contacts">
+          <a class="header__contacts-city" href="#">
+            <span class="header__contacts-text">НОВОСИБИРСК</span>
+          </a>
+
+          <p class="header__contacts-tel">
+            8 (383) 284 01 60
+          </p>
+        </div>
+
+      </div>  <!--/.header__inner -->
+    </div>  <!--/.container -->
+  </header>  <!--/.header -->
+
+  <section class="intro-page__intro intro">
+    <div class="container">
+      <div class="intro__inner">
+
+        <h1 class="intro__title">
+          Лучшие квесты в Новосибирске
+        </h1>
+
+        <p class="intro__text">
+          Надоело проводить свободное время лёжа на диване?  Игровые площадки questroom на целый час погружают вас  в мир незабываемых авантюр. Ищите подсказки, решайте головоломки и находите выход из комнаты!
+        </p>
+
+        <a class="intro__btn btn-page" href="#">
+          ВЫБРАТЬ КВЕСТ
+        </a>
+
+      </div>  <!--/.intro__inner -->
+    </div>  <!--/.container -->
+  </section>  <!--/.intro -->
+
+  <footer class="intro-page__footer footer">
+    <div class="container">
+      <div class="footer__inner">
+
+        <ul class="footer__inner__list">
+          <li class="footer__list-item">
+            <a class="footer__list-link footer__list-link--insta" href="#">
+              <span class="visually-hidden">Перейти в Insta</span>
+            </a>
+          </li>
+
+          <li class="footer__list-item">
+            <a class="footer__list-link footer__list-link--vk" href="#">
+              <span class="visually-hidden">Перейти в VK</span>
+            </a>
+          </li>
+        </ul>
+
+        <a class="footer__text-question" href="#">
+          <span>?</span> Задать вопрос
+        </a>
+
+
+      </div>  <!--/.footer__inner -->
+    </div>  <!--/.container -->
+  </footer>  <!--/.footer -->
+
 </body>
 </html>
