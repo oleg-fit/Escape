@@ -12,6 +12,15 @@
   align-items: center;
 }
 
+.header__link:hover .header__logo-img,
+.header__link:focus .header__logo-img {
+  opacity: 0.8;
+}
+
+.header__link:active .header__logo-img {
+  opacity: 0.6;
+}
+
 .header__burger {
   display: none;
 
