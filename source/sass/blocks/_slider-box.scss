@@ -1,0 +1,42 @@
+.slider-box .swiper-slide {
+  width: 200px;
+}
+
+.slider-box__inner {
+  padding-left: 104px;
+}
+
+.slider-box__title {
+  margin-top: 0;
+  margin-bottom: 5px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-orange;
+}
+
+.slider-box__subtitle {
+  margin-top: 0;
+  margin-bottom: 48px;
+
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.slider-box__item {
+  background-color: red;
+}
+
+.slider-box__item {
+  display: block;
+  width: 100%;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.slider-box__item-text {
+  font-weight: bold;
+  line-height: 14px;
+}

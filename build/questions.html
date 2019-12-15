@@ -5,18 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- <link rel="preload" href="/fonts/PTSansNarrow.woff2" as="font"> -->
-  <script src="js/picturefill.js" async></script>
+  <script src="js/picturefill.js" async=""></script>
   <script>
     // Picture element HTML5 shiv
     document.createElement( "picture" );
   </script>
   <title>Лучшие квесты</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800&display=swap" rel="stylesheet">
 </head>
-<body class="intro-page">
+<body class="questions-page">
 
-  <header class="intro-page__header header">
+  <header class="questions-page__header header">
     <div class="container">
       <div class="header__inner">
 
@@ -35,7 +36,7 @@
           <ul class="main-nav__list">
 
             <li class="main-nav__list-item">
-              <a class="main-nav__list-link" href="questions.html">
+              <a class="main-nav__list-link main-nav__list-link--questions" href="questions.html">
                 КВЕСТЫ
               </a>
             </li>
@@ -81,55 +82,91 @@
     </div>  <!--/.container -->
   </header>  <!--/.header -->
 
-  <section class="intro-page__intro intro">
-    <div class="container">
-      <div class="intro__inner">
-
-        <h1 class="intro__title">
-          Лучшие квесты в Новосибирске
-        </h1>
-
-        <p class="intro__text">
-          Надоело проводить свободное время лёжа на диване?  Игровые площадки questroom на целый час погружают вас  в мир незабываемых авантюр. Ищите подсказки, решайте головоломки и находите выход из комнаты!
-        </p>
-
-        <a class="intro__btn btn-page" href="questions.html">
-          ВЫБРАТЬ КВЕСТ
-        </a>
-
-      </div>  <!--/.intro__inner -->
-    </div>  <!--/.container -->
-  </section>  <!--/.intro -->
-
-  <footer class="intro-page__footer footer">
-    <div class="container">
-      <div class="footer__inner">
-
-        <ul class="footer__inner__list">
-          <li class="footer__list-item">
-            <a class="footer__list-link footer__list-link--insta" href="#">
-              <span class="visually-hidden">Перейти в Insta</span>
-            </a>
-          </li>
-
-          <li class="footer__list-item">
-            <a class="footer__list-link footer__list-link--vk" href="#">
-              <span class="visually-hidden">Перейти в VK</span>
-            </a>
-          </li>
-        </ul>
-
-        <a class="footer__text-question" href="#">
-          <span>?</span> Задать вопрос
-        </a>
-
-
-      </div>  <!--/.footer__inner -->
-    </div>  <!--/.container -->
-  </footer>  <!--/.footer -->
-
   <div class="overlay-popap">
   </div>  <!--/.overlay-popap -->
+
+  <main class="questions-page__main">
+
+    <section class="slider-box">
+      <div class="container">
+        <div class="slider-box__inner">
+
+          <h1 class="slider-box__title">
+            квесты в Новосибирске
+          </h1>
+
+          <h2 class="slider-box__subtitle">
+            Выберите тематику
+          </h2>
+
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="slider-box__item">
+                  <span class="slider-box__item-text slider-box__item-text--all">
+                    Все квесты
+                  </span>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="slider-box__item">
+                  <span class="slider-box__item-text slider-box__item-text--adventure">
+                    Приключения
+                  </span>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="slider-box__item">
+                  <span class="slider-box__item-text slider-box__item-text--horror">
+                    Ужасы
+                  </span>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="slider-box__item">
+                  <span class="slider-box__item-text slider-box__item-text--mysticism">
+                    Мистика
+                  </span>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="slider-box__item">
+                  <span class="slider-box__item-text slider-box__item-text--detective">
+                    Детектив
+                  </span>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="slider-box__item">
+                  <span class="slider-box__item-text slider-box__item-text--sci">
+                    Sci-fi
+                  </span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          </div>
+
+        </div>  <!--/.slider-box__inner -->
+        <!--/.container -->
+    </section>  <!--/.slider -->
+
+    <section class="">
+
+      <h2></h2>
+
+    </section>
+
+  </main>
+
 
   <section class="city-popap">
     <div class="city-popap__inner">
@@ -137,8 +174,8 @@
       <button class="popap-close" type="button">
         <svg class="popap-close__btn-svg" viewBox="0 0 16 16" width="16" height="16">
           <g>
-            <path d="M1 15L15 1.00003" stroke-width="2"/>
-            <path d="M1 1L15 15" stroke-width="2"/>
+            <path d="M1 15L15 1.00003" stroke-width="2"></path>
+            <path d="M1 1L15 15" stroke-width="2"></path>
           </g>
         </svg>
         <span class="visually-hidden">
@@ -199,8 +236,8 @@
       <button class="popap-close" type="button">
         <svg class="popap-close__btn-svg" viewBox="0 0 16 16" width="16" height="16">
           <g>
-            <path d="M1 15L15 1.00003" stroke-width="2"/>
-            <path d="M1 1L15 15" stroke-width="2"/>
+            <path d="M1 15L15 1.00003" stroke-width="2"></path>
+            <path d="M1 1L15 15" stroke-width="2"></path>
           </g>
         </svg>
         <span class="visually-hidden">
@@ -254,6 +291,18 @@
     </div>  <!--/.question-popap__inner -->
   </section>  <!--/.your-question -->
 
+
   <script src="js/script.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 6,
+      spaceBetween: 0,
+      centeredSlides: true,
+    });
+  </script>
+
 </body>
 </html>
