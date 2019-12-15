@@ -13,6 +13,7 @@
   text-transform: uppercase;
   color: $color-white;
 
+  border: none;
   border-radius: 65px;
   background-color: $color-orange;
 
@@ -27,4 +28,3 @@
 .btn-page:active {
   background-color: rgba($color-orange-light, 0.7);
 }
-

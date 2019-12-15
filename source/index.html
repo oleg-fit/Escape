@@ -10,12 +10,11 @@
     // Picture element HTML5 shiv
     document.createElement( "picture" );
   </script>
-  <title>Стартовый шаблон</title>
+  <title>Лучшие квесты</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800&display=swap" rel="stylesheet">
 </head>
 <body class="intro-page">
-
 
   <header class="intro-page__header header">
     <div class="container">
@@ -94,7 +93,7 @@
           Надоело проводить свободное время лёжа на диване?  Игровые площадки questroom на целый час погружают вас  в мир незабываемых авантюр. Ищите подсказки, решайте головоломки и находите выход из комнаты!
         </p>
 
-        <a class="intro__btn btn-page" href="#">
+        <a class="intro__btn btn-page" href="questions.html">
           ВЫБРАТЬ КВЕСТ
         </a>
 
@@ -129,10 +128,14 @@
     </div>  <!--/.container -->
   </footer>  <!--/.footer -->
 
-  <section class="your-city">
-    <div class="your-city__inner">
-      <button class="your-city__btn-close" type="button">
-        <svg class="your-city__btn-svg" viewBox="0 0 16 16" width="16" height="16">
+  <div class="overlay-popap">
+  </div>  <!--/.overlay-popap -->
+
+  <section class="city-popap">
+    <div class="city-popap__inner">
+
+      <button class="popap-close" type="button">
+        <svg class="popap-close__btn-svg" viewBox="0 0 16 16" width="16" height="16">
           <g>
             <path d="M1 15L15 1.00003" stroke-width="2"/>
             <path d="M1 1L15 15" stroke-width="2"/>
@@ -143,52 +146,113 @@
         </span>
       </button>
 
-      <h2 class="your-city__title">
+      <h2 class="city-popap__title">
         Ваш город:
       </h2>
 
-      <p class="your-city__gps-text">
+      <p class="city-popap__gps-text">
         Определить местоположение
       </p>
 
-      <p class="your-city__text">
+      <p class="city-popap__text">
         ... или выберите вручную
       </p>
 
-      <ul class="your-city-list">
-        <li class="your-city-list__item">
-          <a class="your-city-list__link your-city-list__link--active" href="#">
+      <ul class="city-popap__list">
+        <li class="city-popap__list-item">
+          <a class="city-popap__list-link your-city__list-link--active" href="#">
             Новосибирск
           </a>
         </li>
 
-        <li class="your-city-list__item">
-          <a class="your-city-list__link" href="#">
+        <li class="ccity-popap__list-item">
+          <a class="city-popap__list-link" href="#">
             Иркутск
           </a>
         </li>
 
-        <li class="your-city-list__item">
-          <a class="your-city-list__link" href="#">
+        <li class="city-popap__list-item">
+          <a class="city-popap__list-link" href="#">
             Смоленск
           </a>
         </li>
 
-        <li class="your-city-list__item">
-          <a class="your-city-list__link" href="#">
+        <li class="city-popap__list-item">
+          <a class="city-popap__list-link" href="#">
             Волгоград
           </a>
         </li>
 
-        <li class="your-city-list__item">
-          <a class="your-city-list__link" href="#">
+        <li class="city-popap__list-item">
+          <a class="city-popap__list-link" href="#">
             Комсомольск-на-Амуре
           </a>
         </li>
       </ul>
 
-    </div>  <!--/.city__inner -->
-  </section>  <!--/.city -->
+    </div>  <!--/.city-popap__inner -->
+  </section>  <!--/.city-popap -->
+
+  <section class="question-popap">
+    <div class="question-popap__inner">
+
+      <button class="popap-close" type="button">
+        <svg class="popap-close__btn-svg" viewBox="0 0 16 16" width="16" height="16">
+          <g>
+            <path d="M1 15L15 1.00003" stroke-width="2"/>
+            <path d="M1 1L15 15" stroke-width="2"/>
+          </g>
+        </svg>
+        <span class="visually-hidden">
+          Закрыть
+        </span>
+      </button>
+
+      <h2 class="question-popap__title">
+        Задайте вопрос
+      </h2>
+
+      <form class="question-popap__form" method="get" action="https://echo.htmlacademy.ru">
+        <ul class="question-popap__form-list">
+
+          <li class="question-popap__form-list">
+            <label class="question-popap__form-label" for="name">
+              Чтобы мы смогли обращаться к вам, оставьте ваше имя
+            </label>
+            <input class="question-popap__form-input question-popap__form-input--name" id="name" placeholder="Имя" type="text" name="Имя:">
+          </li>
+
+          <li class="question-popap__form-list">
+            <label class="question-popap__form-label" for="mail">
+              Чтобы вы получили ответ, оставьте ваш e-mail
+            </label>
+            <input class="question-popap__form-input question-popap__form-input--mail" id="mail" placeholder="E-mail" type="text" name="E-mail:">
+          </li>
+
+          <li class="question-popap__form-list">
+            <label class="question-popap__form-label" for="question">
+              Ваш вопрос:
+            </label>
+            <textarea class="question-popap__form-textarea question-popap__form-textarea--question" id="question" placeholder="Начните вводить ..." name="Вопрос:"></textarea>
+          </li>
+
+        </ul>
+
+        <button class="question-popap__form-btn btn-page" type="submit">
+          ОТПРАВИТЬ ВОПРОС
+        </button>
+
+        <label class="question-popap__label">
+          <input class="question-popap__input visually-hidden" type="checkbox" name="agree">
+          <span class="question-popap__check-box"></span>
+          <span class="question-popap__text">Я согласен с правилами обработки персональных данных и пользовательским соглашением</span>
+        </label>
+
+      </form>
+
+
+    </div>  <!--/.question-popap__inner -->
+  </section>  <!--/.your-question -->
 
   <script src="js/script.js"></script>
 </body>

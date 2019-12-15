@@ -34,14 +34,14 @@
 }
 
 .footer__list-link--insta {
-  background-image: url(../img/instagram-default.png);
+  background-image: url("../img/instagram-default.png");
 
   transition: all 0.1s linear;
 }
 
 .footer__list-link--insta:hover,
 .footer__list-link--insta:focus {
-  background-image: url(../img/instagram-hover.png);
+  background-image: url("../img/instagram-hover.png");
 }
 
 .footer__list-link--insta:active {
@@ -49,14 +49,14 @@
 }
 
 .footer__list-link--vk {
-  background-image: url(../img/vk-default.png);
+  background-image: url("../img/vk-default.png");
 
   transition: all 0.1s linear;
 }
 
 .footer__list-link--vk:hover,
 .footer__list-link--vk:focus {
-  background-image: url(../img/vk-hover.png);
+  background-image: url("../img/vk-hover.png");
 }
 
 .footer__list-link--vk:active {
@@ -84,7 +84,7 @@
   border-bottom-color: $color-orange;
 }
 
-.footer__text-question:active{
+.footer__text-question:active {
   border-bottom-style: solid;
 }
 

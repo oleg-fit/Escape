@@ -1,0 +1,41 @@
+.popap-close {
+  position: absolute;
+  top: 39px;
+  right: 29px;
+
+  height: 18px;
+  width: 18px;
+
+  border-color: transparent;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.popap-close__btn-svg {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+
+  stroke: rgba($color-white, 0.5);
+
+  transition: all 0.1 linear;
+}
+
+.popap-close:hover .popap-close__btn-svg,
+.popap-close:focus .popap-close__btn-svg {
+  stroke: rgba($color-white, 0.8);
+}
+
+.popap-close:active .popap-close__btn-svg {
+  stroke: rgba($color-white, 1);
+}
+
+
+/* =====================================================================================
+Media max-width: 767px*/
+@media (max-width: $mobile-width) {
+  .popap-close {
+    right: 16px;
+  }
+}

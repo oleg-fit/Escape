@@ -1,0 +1,15 @@
+.overlay-popap {
+  position: absolute;
+  top: 0;
+
+  display: none;
+  height: 100vh;
+  width: 100%;
+
+  background: $color-overlay;
+  opacity: 0.96;
+}
+
+.overlay-popap--show {
+  display: block;
+}
