@@ -1,4 +1,7 @@
 .questions-box__list {
+  display: flex;
+  flex-wrap: wrap;
+
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -7,24 +10,58 @@
 }
 
 .questions-box__list-item {
+  max-width: 344px;
+  width: 100%;
+  margin-right: 24px;
+  margin-bottom: 32px;
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .questions-box__list-link {
   display: block;
-  max-width: 344px;
-  width: 100%;
 
   color: $color-white;
-}
 
-.questions-box__list-link__crypt {
-  background-image:
-  linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
-  url(../img/quest-bg-card-crypt.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 3px;
+}
+
+.questions-box__list-link--crypt {
+  background-image:
+  linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
+  url("../img/quest-bg-card-crypt.jpg");
+}
+
+.questions-box__list-link--maniac {
+  background-image:
+  linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
+  url("../img/quest-bg-card-maniac.jpg");
+}
+
+.questions-box__list-link--ritual {
+  background-image:
+  linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
+  url("../img/quest-bg-card-ritual.jpg");
+}
+
+.questions-box__list-link--history {
+  background-image:
+  linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
+  url("../img/quest-bg-card-history.jpg");
+}
+
+.questions-box__list-link--secret {
+  background-image:
+  linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
+  url("../img/quest-bg-card-secret.jpg");
+}
+
+.questions-box__list-link--hut {
+  background-image:
+  linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
+  url("../img/quest-bg-card-hut.jpg");
 }
 
 .questions-box__list-content {
@@ -37,30 +74,36 @@
 }
 
 .questions-box__list-title {
+  width: 250px;
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 
   font-weight: bold;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 29px;
 }
 
 .questions-box__list-adress {
   position: relative;
 
   margin-top: 0;
-  margin-bottom: 8px;
-  padding-left: 18px;
+  margin-bottom: 9px;
+  padding-left: 21px;
 }
 
 .questions-box__list-adress:after {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -1px;
+  left: 1px;
 
   content: "";
-  height: 14px;
+  display: block;
   width: 11px;
+  height: 14px;
+
+  background-image: url(../img/icon-location.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .questions-box__list-adress,
@@ -79,6 +122,9 @@
 .questions-box__description-people {
   position: relative;
 
+  padding-top: 3px;
+  padding-right: 13px;
+  padding-bottom: 3px;
   padding-left: 21px;
 
   border-right: 1px solid rgba($color-white, 0.5);
@@ -101,13 +147,16 @@
 .questions-box__description-level {
   position: relative;
 
-  padding-left: 21px;
+  padding-top: 3px;
+  padding-right: 13px;
+  padding-bottom: 3px;
+  padding-left: 34px;
 }
 
 .questions-box__description-level::before {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 1px;
+  left: 11px;
 
   content: "";
   height: 16px;

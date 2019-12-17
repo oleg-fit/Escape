@@ -23,13 +23,14 @@
 }
 
 .intro__title {
-  max-width: 585px;
+  max-width: 530px;
   margin-top: 0;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 
   font-weight: 800;
   font-size: 64px;
   line-height: 70px;
+  letter-spacing: 1px;
 
   color: $color-white;
 }
@@ -37,11 +38,11 @@
 .intro__text {
   max-width: 468px;
   margin-top: 0;
-  margin-bottom: 64px;
+  margin-bottom: 69px;
 
   font-weight: 500;
   font-size: 17px;
-  line-height: 23px;
+  line-height: 25px;
 
   color: $color-white-dark;
 }
