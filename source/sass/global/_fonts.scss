@@ -49,11 +49,23 @@
 @font-face {
   font-family: "Raleway";
 
-  font-weight: 400;
+  font-weight: 800;
   font-style: normal;
   font-display: swap;
 
   src: local("Oswald"),
-    url("../fonts/raleway-extraBold.woff2") format("woff2"),
-    url("../fonts/raleway-extraBold.woff") format("woff");
+    url("../fonts/raleway-extrabold.woff2") format("woff2"),
+    url("../fonts/raleway-extrabold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Raleway";
+
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+
+  src: local("Oswald"),
+    url("../fonts/raleway-black.woff2") format("woff2"),
+    url("../fonts/raleway-black.woff") format("woff");
 }

@@ -142,6 +142,11 @@ Media max-width: 1023px*/
 /* =====================================================================================
 Media max-width: 767px*/
 @media (max-width: $mobile-width) {
+  .header {
+    height: 100vh;
+    background: linear-gradient(163.84deg, #633C0F -68.98%, #24150E 75.12%, #1A140D 132.97%);
+  }
+
   .header__inner {
     flex-wrap: wrap;
   }

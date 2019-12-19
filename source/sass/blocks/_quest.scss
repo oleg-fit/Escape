@@ -1,0 +1,80 @@
+.quest {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 100vh;
+}
+
+.quest--maniac {
+  height: 100vh;
+
+  background-image:
+  radial-gradient(43.88% 64.96% at 22.69% 38.28%, rgba(0, 0, 0, 0.04) 47.51%, rgba(0, 0, 0, 0.76) 91.16%),
+  url("../img/quest-bg-desktop-maniac.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quest--secret {
+  height: 100vh;
+
+  background-image:
+  radial-gradient(43.88% 64.96% at 22.69% 38.28%, rgba(0, 0, 0, 0.04) 47.51%, rgba(0, 0, 0, 0.76) 91.16%),
+  url("../img/quest-bg-desktop-secret.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quest--ritual {
+  height: 100vh;
+
+  background-image:
+  radial-gradient(43.88% 64.96% at 22.69% 38.28%, rgba(0, 0, 0, 0.04) 47.51%, rgba(0, 0, 0, 0.76) 91.16%),
+  url("../img/quest-bg-desctop-ritual.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quest__inner {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: 133px;
+}
+
+.quest__subtitle {
+  margin-top: 0;
+  margin-bottom: 13px;
+  margin-left: 6px;
+
+  font-weight: 500;
+  line-height: 14px;
+  color: $color-orange;
+}
+
+.quest__title {
+  margin-top: 0;
+  margin-bottom: 37px;
+
+  font-weight: 900;
+  font-size: 92px;
+  line-height: 87px;
+  letter-spacing: -2.9px;
+  color: $color-white;
+}
+
+.quest__text {
+  max-width: 522px;
+  margin-top: 0;
+  margin-bottom: 41px;
+  margin-left: 31px;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 23px;
+  color: $color-white-dark;
+}
+
+.quest__btn {
+  margin-left: 33px;
+}

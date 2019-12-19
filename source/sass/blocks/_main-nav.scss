@@ -24,6 +24,10 @@
   color: $color-white-light;
 }
 
+.main-nav__list-link--active {
+  color: $color-orange;
+}
+
 .main-nav__list-link:hover,
 .main-nav__list-link:focus {
   color: rgba($color-white-light, 0.8);

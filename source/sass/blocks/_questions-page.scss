@@ -1,9 +1,9 @@
-.questions-page .main-nav__list-link--questions {
-  color: $color-orange;
-}
-
 .questions-page__main {
   padding-top: 122px;
 
+  background: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
+}
+
+.questions-page__header {
   background: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
 }
