@@ -10,8 +10,8 @@
   height: 100vh;
 
   background-image:
-  radial-gradient(43.88% 64.96% at 22.69% 38.28%, rgba(0, 0, 0, 0.04) 47.51%, rgba(0, 0, 0, 0.76) 91.16%),
-  url("../img/quest-bg-desktop-maniac.jpg");
+    radial-gradient(43.88% 64.96% at 22.69% 38.28%, rgba(0, 0, 0, 0.04) 47.51%, rgba(0, 0, 0, 0.76) 91.16%),
+    url("../img/quest-bg-desktop-maniac.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -20,8 +20,8 @@
   height: 100vh;
 
   background-image:
-  radial-gradient(43.88% 64.96% at 22.69% 38.28%, rgba(0, 0, 0, 0.04) 47.51%, rgba(0, 0, 0, 0.76) 91.16%),
-  url("../img/quest-bg-desktop-secret.jpg");
+    radial-gradient(43.88% 64.96% at 22.69% 38.28%, rgba(0, 0, 0, 0.04) 47.51%, rgba(0, 0, 0, 0.76) 91.16%),
+    url("../img/quest-bg-desktop-secret.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -30,8 +30,18 @@
   height: 100vh;
 
   background-image:
-  radial-gradient(43.88% 64.96% at 22.69% 38.28%, rgba(0, 0, 0, 0.04) 47.51%, rgba(0, 0, 0, 0.76) 91.16%),
-  url("../img/quest-bg-desctop-ritual.jpg");
+    radial-gradient(43.88% 64.96% at 22.69% 38.28%, rgba(0, 0, 0, 0.04) 47.51%, rgba(0, 0, 0, 0.76) 91.16%),
+    url("../img/quest-bg-desctop-ritual.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quest--experiments {
+  height: 100vh;
+
+  background-image:
+    radial-gradient(43.88% 64.96% at 22.69% 38.28%, rgba(0, 0, 0, 0.04) 47.51%, rgba(0, 0, 0, 0.76) 91.16%),
+    url("../img/quest-bg-desktop-experiments.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -40,6 +50,10 @@
   max-width: 600px;
   margin-left: auto;
   margin-right: 133px;
+}
+
+.quest__link {
+  display: none;
 }
 
 .quest__subtitle {
@@ -54,13 +68,93 @@
 
 .quest__title {
   margin-top: 0;
-  margin-bottom: 37px;
+  margin-bottom: 26px;
 
   font-weight: 900;
   font-size: 92px;
   line-height: 87px;
   letter-spacing: -2.9px;
   color: $color-white;
+}
+
+.quest__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 410px;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 18px;
+  margin-left: 32px;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.quest__list-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+// .quest__list-item:nth-child(2)::after {
+
+// }
+
+.quest__list-text {
+  position: relative;
+
+  display: block;
+  padding-top: 5px;
+  padding-left: 28px;
+  padding-bottom: 5px;
+
+  font-size: 14px;
+  font-weight: normal;
+
+  color: $color-white-dark;
+}
+
+.quest__list-text--time::before {
+  position: absolute;
+  top: 3px;
+  left: -2px;
+
+  content: "";
+  height: 20px;
+  width: 20px;
+
+  background-image: url("../img/icon-clock.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quest__list-text--people::before {
+  position: absolute;
+  top: 2px;
+  left: 0;
+
+  content: "";
+  height: 24px;
+  width: 19px;
+
+  background-image: url("../img/icon-person.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quest__list-text--level::before {
+  position: absolute;
+  top: 1px;
+  left: -3px;
+
+  content: "";
+  height: 24px;
+  width: 24px;
+
+  background-image: url("../img/icon-puzzle.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .quest__text {
@@ -77,4 +171,117 @@
 
 .quest__btn {
   margin-left: 33px;
+}
+
+/* =====================================================================================
+Media max-width: 1023px*/
+@media (max-width: $tablet-width) {
+  .quest__inner {
+    margin-right: 0;
+  }
+}
+
+/* =====================================================================================
+Media max-width: 767px*/
+@media (max-width: $mobile-width) {
+  .quest {
+    justify-content: flex-start;
+    padding-top: 88px;
+  }
+
+  .quest--maniac {
+    background-image:
+      linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%),
+      url("../img/quest-bg-mobile-maniac.jpg");
+    background-position: top, center;
+  }
+
+  .quest--secret {
+    background-image:
+      linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%),
+      url("../img/quest-bg-mobile-secret.jpg");
+  }
+
+  .quest--ritual {
+    background-image:
+      linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%),
+      url("../img/quest-bg-mobile-ritual.jpg");
+  }
+
+  .quest--experiments {
+    background-image:
+      linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%),
+      url("../img/quest-bg-mobile-experiments.jpg");
+  }
+
+  .quest__inner {
+    margin: 0 auto;
+  }
+
+  .quest__link {
+    display: block;
+
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $color-white-dark;
+  }
+
+  .quest__subtitle {
+    margin-top: 296px;
+    margin-bottom: 14px;
+  }
+
+  .quest__title {
+    margin-bottom: 4px;
+    margin-left: 6px;
+
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 0.1px;
+  }
+
+  .quest__list {
+    max-width: 337px;
+    width: 100%;
+    margin-bottom: -3px;
+    margin-left: 3px;
+
+    align-items: flex-start;
+  }
+
+  .quest__list-text {
+    width: 100px;
+    padding-top: 40px;
+    padding-left: 0;
+    padding-bottom: 5px;
+
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .quest__list-text--time::before {
+    top: 8px;
+    left: 38px;
+  }
+
+  .quest__list-text--people::before {
+    top: 6px;
+    left: 39px;
+  }
+
+  .quest__list-text--level::before {
+    top: 7px;
+    left: 37px;
+  }
+
+  .quest__text {
+    max-width: 345px;
+    margin-bottom: 19px;
+    margin-left: 5px;
+  }
+
+  .quest__btn {
+    margin-left: 5px;
+  }
 }

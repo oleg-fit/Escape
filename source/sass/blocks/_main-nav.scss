@@ -1,6 +1,8 @@
 .main-nav {
   max-width: 531px;
   width: 100%;
+
+  // margin-left: 136px;
 }
 
 .main-nav__list {
@@ -54,7 +56,10 @@ Media max-width: 1023px*/
 Media max-width: 767px*/
 @media (max-width: $mobile-width) {
   .main-nav {
+    display: none;
     max-width: 100%;
+    margin-left: 0;
+    padding-top: 42px;
 
     order: 1;
   }

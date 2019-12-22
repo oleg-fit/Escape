@@ -31,12 +31,15 @@
 
   height: 28px;
   width: 28px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transition: all 0.1s linear;
 }
 
 .footer__list-link--insta {
   background-image: url("../img/instagram-default.png");
-
-  transition: all 0.1s linear;
 }
 
 .footer__list-link--insta:hover,
@@ -50,8 +53,6 @@
 
 .footer__list-link--vk {
   background-image: url("../img/vk-default.png");
-
-  transition: all 0.1s linear;
 }
 
 .footer__list-link--vk:hover,
@@ -104,5 +105,27 @@ Media max-width: 767px*/
 @media (max-width: $mobile-width) {
   footer {
     display: none;
+  }
+
+  .footer__text-question {
+    margin-bottom: 8px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+
+    color: $color-white-dark;
+  }
+
+  .footer__list-item {
+    margin-right: 16px;
+  }
+
+  .footer__list-link {
+    margin-bottom: 5px;
+
+    height: 36px;
+    width: 36px;
   }
 }

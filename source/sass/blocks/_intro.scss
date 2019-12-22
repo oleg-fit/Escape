@@ -1,16 +1,12 @@
 .intro {
   height: 100vh;
 
-  background-image: url("../img/intro-bg-desktop.jpg");
+  background-image:
+    linear-gradient(274.19deg, rgba(99, 60, 15, 0) 35.91%, rgba(36, 21, 14, 0.54) 65.15%, rgba(26, 20, 13, 0.54) 98.48%),
+    radial-gradient(41.41% 41.41% at 66.25% 48.18%, rgba(0, 0, 0, 0) 2.48%, rgba(0, 0, 0, 0) 63.56%, rgba(0, 0, 0, 0.71) 97.05%),
+    url("../img/intro-bg-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
-  // background-image: linear-gradient(274.19deg, rgba(99, 60, 15, 0) 35.91%, #24150E 65.15%, #1A140D 98.48%);
-  // opacity: 0.54;
-
-  // background-image: radial-gradient(41.41% 41.41% at 66.25% 48.18%, rgba(0, 0, 0, 0) 2.48%, rgba(0, 0, 0, 0) 63.56%, rgba(0, 0, 0, 0.71) 97.05%);
-  // background-blend-mode: darken;
-  // opacity: 0.7;
 }
 
 .intro__inner {
@@ -23,14 +19,14 @@
 }
 
 .intro__title {
-  max-width: 530px;
+  max-width: 540px;
   margin-top: 0;
   margin-bottom: 32px;
 
   font-weight: 800;
   font-size: 64px;
   line-height: 70px;
-  letter-spacing: 1px;
+  letter-spacing: -0.2px;
 
   color: $color-white;
 }
@@ -38,7 +34,7 @@
 .intro__text {
   max-width: 468px;
   margin-top: 0;
-  margin-bottom: 69px;
+  margin-bottom: 66px;
 
   font-weight: 500;
   font-size: 17px;
@@ -51,27 +47,11 @@
 Media max-width: 767px*/
 @media (max-width: $mobile-width) {
   .intro {
-    // position: relative;
-
-    background-image: url("../img/intro-bg-mobile.jpg");
-    // background: linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%);
-    // background: radial-gradient(41.41% 41.41% at 66.25% 48.18%, rgba(0, 0, 0, 0) 2.48%, rgba(0, 0, 0, 0) 63.56%, rgba(0, 0, 0, 0.71) 97.05%);
+    background-image:
+      linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%),
+      radial-gradient(41.41% 41.41% at 66.25% 48.18%, rgba(0, 0, 0, 0) 2.48%, rgba(0, 0, 0, 0) 63.56%, rgba(0, 0, 0, 0.71) 97.05%),
+      url("../img/intro-bg-mobile.jpg");
   }
-
-  // .intro:after {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-
-  //   content: "";
-  //   display: block;
-  //   width: 100%;
-  //   height: 100%;
-
-  //   background: transparent;
-  //   background-image: radial-gradient(41.41% 41.41% at 66.25% 48.18%, rgba(0, 0, 0, 0) 2.48%, rgba(0, 0, 0, 0) 63.56%, rgba(0, 0, 0, 0.71) 97.05%);
-  //   opacity: 0.48;
-  // }
 
   .intro__inner {
     justify-content: flex-end;
@@ -80,7 +60,7 @@ Media max-width: 767px*/
   }
 
   .intro__title {
-    max-width: 336px;
+    max-width: 290px;
     margin-right: auto;
     margin-bottom: 32px;
     margin-left: auto;
@@ -95,8 +75,14 @@ Media max-width: 767px*/
   }
 
   .intro__btn {
+    max-width: 185px;
+    min-height: 47px;
     margin-right: auto;
-    margin-bottom: 64px;
+    margin-bottom: 58px;
     margin-left: auto;
+
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 16px;
   }
 }

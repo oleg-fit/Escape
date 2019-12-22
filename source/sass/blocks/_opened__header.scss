@@ -1,0 +1,27 @@
+/* =====================================================================================
+Media max-width: 767px*/
+@media (max-width: $mobile-width) {
+  .opened__header .header {
+    height: 100vh;
+    background: linear-gradient(163.84deg, #633c0f -68.98%, #24150e 75.12%, #1a140d 132.97%);
+  }
+
+  .opened__header .main-nav {
+    display: block;
+  }
+
+  .opened__header .header__contacts {
+    display: block;
+  }
+
+  .opened__header .footer {
+    display: block;
+  }
+
+  .opened__header .header__burger::after {
+    height: 16px;
+    width: 16px;
+
+    background-image: url("../img/burger-open.svg");
+  }
+}

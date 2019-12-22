@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 
 </head>
-<body class="intro-page">
+<body class="intro-page body-js">
 
   <header class="intro-page__header header">
     <div class="container">
@@ -159,7 +159,7 @@
 
       <ul class="city-popap__list">
         <li class="city-popap__list-item">
-          <a class="city-popap__list-link your-city__list-link--active" href="#">
+          <a class="city-popap__list-link city__list-link--active" href="#">
             Новосибирск
           </a>
         </li>
@@ -214,21 +214,21 @@
       <form class="question-popap__form" method="get" action="https://echo.htmlacademy.ru">
         <ul class="question-popap__form-list">
 
-          <li class="question-popap__form-list">
+          <li class="question-popap__form-item">
             <label class="question-popap__form-label" for="name">
               Чтобы мы смогли обращаться к вам, оставьте ваше имя
             </label>
-            <input class="question-popap__form-input question-popap__form-input--name" id="name" placeholder="Имя" type="text" name="Имя:">
+            <input class="question-popap__form-input question-popap__form-input--name" id="name" placeholder="Имя" type="text" name="Имя:" data-rule="name">
           </li>
 
-          <li class="question-popap__form-list">
+          <li class="question-popap__form-item">
             <label class="question-popap__form-label" for="mail">
               Чтобы вы получили ответ, оставьте ваш e-mail
             </label>
-            <input class="question-popap__form-input question-popap__form-input--mail" id="mail" placeholder="E-mail" type="text" name="E-mail:">
+            <input class="question-popap__form-input question-popap__form-input--mail" id="mail" placeholder="E-mail" type="text" name="E-mail:" data-rule="mail">
           </li>
 
-          <li class="question-popap__form-list">
+          <li class="question-popap__form-item">
             <label class="question-popap__form-label" for="question">
               Ваш вопрос:
             </label>

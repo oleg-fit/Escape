@@ -6,7 +6,7 @@
 
   max-width: 480px;
   width: 100%;
-  padding-top: 32px;
+  padding-top: 35px;
   padding-right: 32px;
   padding-bottom: 33px;
   padding-left: 32px;
@@ -35,9 +35,13 @@
   list-style: none;
 }
 
+.question-popap__form-item {
+  margin-bottom: 2px;
+}
+
 .question-popap__title {
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 
   font-weight: 800;
   font-size: 32px;
@@ -46,7 +50,7 @@
 
 .question-popap__form-label {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 19px;
 
   font-weight: 500;
   font-size: 15px;
@@ -59,9 +63,9 @@
   max-width: 400px;
   width: 100%;
   margin-bottom: 32px;
-  padding-top: 16px;
+  padding-top: 18px;
   padding-right: 24px;
-  padding-bottom: 16px;
+  padding-bottom: 17px;
   padding-left: 24px;
 
   border: 1px solid rgba($color-white, 0.4);
@@ -77,15 +81,24 @@
   color: rgba($color-white-dark, 0.64);
 }
 
+.question-popap__form-input--valid {
+  border-color: green;
+}
+
+.question-popap__form-input--invalid {
+  background-color: red;
+}
+
 .question-popap__form-textarea {
   min-height: 120px;
+  margin-bottom: 26px;
 }
 
 .question-popap__form-btn {
   margin: 0 auto;
   min-height: 47px;
   max-width: 219px;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 
   font-weight: 800;
   font-size: 14px;
@@ -116,7 +129,7 @@
   border-radius: 4px;
 }
 
-.question-popap__check-box:after {
+.question-popap__check-box::after {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -136,7 +149,7 @@
   background: $color-orange;
 }
 
-.question-popap__input:checked + .question-popap__check-box:after {
+.question-popap__input:checked + .question-popap__check-box::after {
   display: block;
 }
 
@@ -156,7 +169,7 @@
   background: rgba($color-orange, 0.2);
 }
 
-.question-popap__input:checked:disabled + .question-popap__check-box:after {
+.question-popap__input:checked:disabled + .question-popap__check-box::after {
   opacity: 0.5;
 }
 
@@ -164,15 +177,50 @@
 /* =====================================================================================
 Media max-width: 767px*/
 @media (max-width: $mobile-width) {
-  .question-popap__form-input,
-  .question-popap__form-textarea {
-    margin-right: 8px;
-  }
-
   .question-popap {
     height: 100vh;
     max-width: 100%;
     padding-right: 16px;
     padding-left: 16px;
+  }
+
+  .question-popap__inner {
+    max-width: 360px;
+    width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .question-popap__title {
+    margin-bottom: 43px;
+  }
+
+  .question-popap__form-item {
+    margin-bottom: -1px;
+  }
+
+  .question-popap__form-label {
+    max-width: 280px;
+    margin-bottom: 14px;
+
+    line-height: 22px;
+  }
+
+  .question-popap__form-input,
+  .question-popap__form-textarea {
+    max-width: 319px;
+    margin-right: 8px;
+  }
+
+  .question-popap__form-textarea {
+    margin-bottom: 29px;
+  }
+
+  .question-popap__form-btn {
+    margin-left: 50px;
+  }
+
+  .question-popap__label {
+    line-height: 20px;
   }
 }

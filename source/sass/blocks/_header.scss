@@ -40,15 +40,12 @@
   bottom: 0;
 
   content: "";
-  height: 15px;
-  width: 15px;
+  height: 16px;
+  width: 20px;
 
   background-image: url("../img/burger-close.svg");
   background-repeat: no-repeat;
-}
-
-.header__main-nav {
-  margin-left: 136px;
+  background-size: cover;
 }
 
 .header__contacts {
@@ -117,10 +114,6 @@
 /* =====================================================================================
 Media max-width: 1023px*/
 @media (max-width: $tablet-width) {
-  .header__main-nav {
-    margin-left: 0;
-  }
-
   .header__contacts-city {
     margin-right: 12px;
 
@@ -143,8 +136,7 @@ Media max-width: 1023px*/
 Media max-width: 767px*/
 @media (max-width: $mobile-width) {
   .header {
-    height: 100vh;
-    background: linear-gradient(163.84deg, #633C0F -68.98%, #24150E 75.12%, #1A140D 132.97%);
+    padding-top: 27px;
   }
 
   .header__inner {
@@ -158,21 +150,30 @@ Media max-width: 767px*/
   .header__burger {
     display: block;
     flex-basis: 50%;
+    padding-right: 28px;
 
     text-align: right;
+  }
+
+  .header__burger::after {
+    right: 2px;
+    bottom: 1px;
   }
 
   .header__contacts {
     flex-direction: column;
     flex-basis: 100%;
-
-    padding-top: 44px;
+    display: none;
+    padding-top: 36px;
     padding-bottom: 40px;
 
     text-align: center;
+
+    border-bottom: 1px solid rgba($color-white, 0.16);
   }
 
   .header__contacts-city {
+    display: inline-block;
     max-width: 100%;
     margin-right: 0;
     margin-bottom: 22px;
