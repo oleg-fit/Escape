@@ -48,6 +48,10 @@
   background-size: cover;
 }
 
+.header__main-nav {
+  margin-left: 136px;
+}
+
 .header__contacts {
   display: flex;
   align-items: center;
@@ -109,6 +113,14 @@
   letter-spacing: 0.6px;
 
   color: $color-white-light;
+}
+
+/* =====================================================================================
+Media max-width: 1170px*/
+@media (max-width: 1170px) {
+  .header__main-nav {
+    margin-left: 0;
+  }
 }
 
 /* =====================================================================================
