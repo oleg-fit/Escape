@@ -1,0 +1,36 @@
+.experiments-quest {
+  .quest__inner {
+    margin-top: 22px;
+  }
+
+  .quest__subtitle {
+    margin-bottom: 25px;
+    margin-left: -2px;
+  }
+
+  .quest__title {
+    margin-bottom: 15px;
+  }
+
+  .quest__list {
+    margin-left: 42px;
+  }
+
+  .quest__text {
+    margin-bottom: 40px;
+    margin-left: 39px;
+  }
+
+  .quest__btn {
+    margin-left: 39px;
+  }
+}
+
+/* =====================================================================================
+Media max-width: 767px*/
+// @media (max-width: $mobile-width) {
+//   .experiments-quest {
+
+//   }
+
+// }

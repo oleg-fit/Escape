@@ -48,6 +48,7 @@
 
 .quest__inner {
   max-width: 600px;
+  margin-top: -26px;
   margin-left: auto;
   margin-right: 133px;
 }
@@ -68,7 +69,7 @@
 
 .quest__title {
   margin-top: 0;
-  margin-bottom: 26px;
+  margin-bottom: 22px;
 
   font-weight: 900;
   font-size: 92px;
@@ -85,7 +86,7 @@
   max-width: 410px;
   width: 100%;
   margin-top: 0;
-  margin-bottom: 18px;
+  margin-bottom: 13px;
   margin-left: 32px;
   padding-left: 0;
 
@@ -97,9 +98,33 @@
   padding-bottom: 10px;
 }
 
-// .quest__list-item:nth-child(2)::after {
+.quest__list-item:nth-child(2) {
+  position: relative;
+}
 
-// }
+.quest__list-item:nth-child(2)::before {
+  position: absolute;
+  top: 6px;
+  left: -27px;
+
+  content: "";
+  height: 36px;
+  width: 1px;
+
+  background-color: rgba($color-white, 0.36);
+}
+
+.quest__list-item:nth-child(2)::after {
+  position: absolute;
+  top: 6px;
+  right: -24px;
+
+  content: "";
+  height: 36px;
+  width: 1px;
+
+  background-color: rgba($color-white, 0.36);
+}
 
 .quest__list-text {
   position: relative;
@@ -177,6 +202,7 @@
 Media max-width: 1023px*/
 @media (max-width: $tablet-width) {
   .quest__inner {
+    margin-top: 0;
     margin-right: 0;
   }
 }
@@ -219,7 +245,11 @@ Media max-width: 767px*/
   }
 
   .quest__link {
+    position: relative;
+
     display: block;
+    margin-top: 8px;
+    padding-left: 20px;
 
     font-weight: bold;
     font-size: 12px;
@@ -227,8 +257,22 @@ Media max-width: 767px*/
     color: $color-white-dark;
   }
 
+  .quest__link::before {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+
+    content: "";
+    height: 10px;
+    width: 6px;
+
+    background-image: url("../img/icon-left-arrow.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   .quest__subtitle {
-    margin-top: 296px;
+    margin-top: 295px;
     margin-bottom: 14px;
   }
 
@@ -248,6 +292,20 @@ Media max-width: 767px*/
     margin-left: 3px;
 
     align-items: flex-start;
+  }
+
+  .quest__list-item:nth-child(2)::before {
+    top: 18px;
+    left: -13px;
+
+    height: 49px;
+  }
+
+  .quest__list-item:nth-child(2)::after {
+    top: 15px;
+    right: -9px;
+
+    height: 49px;
   }
 
   .quest__list-text {

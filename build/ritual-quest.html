@@ -33,7 +33,7 @@
           <ul class="main-nav__list">
 
             <li class="main-nav__list-item">
-              <a class="main-nav__list-link main-nav__list-link--active" href="questions.html">
+              <a class="main-nav__list-link" href="questions.html">
                 КВЕСТЫ
               </a>
             </li>
@@ -79,12 +79,15 @@
     </div>  <!--/.container -->
   </header>  <!--/.header -->
 
-
   <main>
 
     <section class="quest quest--ritual">
       <div class="container">
         <div class="quest__inner">
+
+          <a class="quest__link" href="questions.html">
+            Все квесты
+          </a>
 
           <p class="quest__subtitle">
             хоррор, мистика
@@ -117,7 +120,7 @@
           </ul>
 
           <p class="quest__text">
-            Тяжелый воздух угнетает, в ночи вы оказыватесь запертыми в сыром помещении вместе с другими ничего не понимающими жертвами. Сквозь щель в двери вы видите, как некто в капюшоне готовит площадку как будто для проведения мистического обряда. Удастся ли&nbsp;вам выбраться, пока вы не станете жертвой ритуала?
+            Тяжелый воздух угнетает, в ночи вы оказыватесь запертыми в сыром помещении вместе с другими ничего не понимающими жертвами. Сквозь щель в двери вы видите, как некто в капюшоне готовит площадку как будто для проведения мистического обряда. Удастся ли&nbsp;вам&nbsp;выбраться, пока вы не станете жертвой ритуала?
           </p>
 
           <a class="quest__btn btn-page" href="questions.html">
@@ -131,9 +134,7 @@
 
   </main>
 
-
-
-  <footer class="intro-page__footer footer">
+  <footer class="footer">
     <div class="container">
       <div class="footer__inner">
 
@@ -192,7 +193,7 @@
 
       <ul class="city-popap__list">
         <li class="city-popap__list-item">
-          <a class="city-popap__list-link your-city__list-link--active" href="#">
+          <a class="city-popap__list-link city__list-link--active" href="#">
             Новосибирск
           </a>
         </li>
@@ -247,21 +248,21 @@
       <form class="question-popap__form" method="get" action="https://echo.htmlacademy.ru">
         <ul class="question-popap__form-list">
 
-          <li class="question-popap__form-list">
+          <li class="question-popap__form-item">
             <label class="question-popap__form-label" for="name">
               Чтобы мы смогли обращаться к вам, оставьте ваше имя
             </label>
-            <input class="question-popap__form-input question-popap__form-input--name" id="name" placeholder="Имя" type="text" name="Имя:">
+            <input class="question-popap__form-input question-popap__form-input--name" id="name" placeholder="Имя" type="text" name="Имя:" data-rule="name">
           </li>
 
-          <li class="question-popap__form-list">
+          <li class="question-popap__form-item">
             <label class="question-popap__form-label" for="mail">
               Чтобы вы получили ответ, оставьте ваш e-mail
             </label>
-            <input class="question-popap__form-input question-popap__form-input--mail" id="mail" placeholder="E-mail" type="text" name="E-mail:">
+            <input class="question-popap__form-input question-popap__form-input--mail" id="mail" placeholder="E-mail" type="text" name="E-mail:" data-rule="mail">
           </li>
 
-          <li class="question-popap__form-list">
+          <li class="question-popap__form-item">
             <label class="question-popap__form-label" for="question">
               Ваш вопрос:
             </label>

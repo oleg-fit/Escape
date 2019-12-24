@@ -4,18 +4,22 @@ Media max-width: 767px*/
   .opened__header .header {
     height: 100vh;
     background: linear-gradient(163.84deg, #633c0f -68.98%, #24150e 75.12%, #1a140d 132.97%);
+    z-index: 100;
   }
 
   .opened__header .main-nav {
     display: block;
+    z-index: 100;
   }
 
   .opened__header .header__contacts {
     display: block;
+    z-index: 100;
   }
 
   .opened__header .footer {
     display: block;
+    z-index: 100;
   }
 
   .opened__header .header__burger::after {
