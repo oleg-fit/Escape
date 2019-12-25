@@ -1,6 +1,8 @@
 .experiments-quest {
   .quest__inner {
+    max-width: 680px;
     margin-top: 22px;
+    margin-right: 53px;
   }
 
   .quest__subtitle {
@@ -27,10 +29,49 @@
 }
 
 /* =====================================================================================
+Media max-width: 1023px*/
+@media (max-width: $tablet-width) {
+  .experiments-quest {
+    .quest__inner {
+      margin-right: 0;
+    }
+  }
+
+}
+
+/* =====================================================================================
 Media max-width: 767px*/
-// @media (max-width: $mobile-width) {
-//   .experiments-quest {
+@media (max-width: $mobile-width) {
+  .experiments-quest {
+    .quest__subtitle {
+      margin-top: 294px;
+      margin-bottom: 12px;
+      margin-left: 16px;
+    }
 
-//   }
+    .quest__title {
+      margin-bottom: 2px;
 
-// }
+      line-height: 46px;
+    }
+
+    .quest__list {
+      margin-left: 0;
+      max-width: 341px;
+    }
+
+    .quest__text {
+      margin-left: 6px;
+    }
+
+    .quest__btn {
+      margin-left: 6px;
+    }
+
+    .quest__text {
+      max-width: 340px;
+    }
+
+
+  }
+}
