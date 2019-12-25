@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="js/picturefill.js" async></script>
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Заказ квеста</title>
+</head>
+<body class="order body-js">
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+
+        <a class="header__link" href="index.html">
+          <picture>
+            <source media="(max-width: 1023px)" srcset="img/logo-header-mobile.svg">
+            <img class="header__logo-img" alt="логотип Escape Room" src="img/logo-header-desktop.svg" width="134" height="50">
+          </picture>
+        </a>
+
+        <a class="header__burger" href="#">
+          МЕНЮ
+        </a>
+
+        <nav class="header__main-nav main-nav">
+          <ul class="main-nav__list">
+
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link main-nav__list-link--active" href="questions.html">
+                КВЕСТЫ
+              </a>
+            </li>
+
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link" href="#">
+                НОВИЧКАМ
+              </a>
+            </li>
+
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link" href="#">
+                ОТЗЫВЫ
+              </a>
+            </li>
+
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link" href="#">
+                АКЦИИ
+              </a>
+            </li>
+
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link" href="#">
+                КОНТАКТЫ
+              </a>
+            </li>
+
+          </ul>  <!--/.main-nav__list -->
+        </nav>  <!--/.main-nav -->
+
+        <div class="header__contacts">
+          <a class="header__contacts-city" href="#">
+            <span class="header__contacts-text">НОВОСИБИРСК</span>
+          </a>
+
+          <p class="header__contacts-tel">
+            8 (383) 284 01 60
+          </p>
+        </div>
+
+      </div>  <!--/.header__inner -->
+    </div>  <!--/.container -->
+  </header>  <!--/.header -->
+
+  <main>
+
+    <section class="order-block">
+      <div class="container">
+        <div class="order-block__inner">
+
+          <div class="order-block__box-title">
+            <h2 class="order-block__subtitle">
+              выбранный квест
+            </h2>
+
+            <h1 class="order-block__title">
+              МАНЬЯК
+            </h1>
+          </div>
+
+          <div class="order-block__box-date">
+            <p class="order-block__date">
+              Вы выбрали игру 22&nbsp;марта в 16:00. К&nbsp;оплате 1500 рублей.
+            </p>
+
+            <a class="order-block__link-pay" href="#">
+              Перейти к оплате
+            </a>
+          </div>
+
+
+          <div class="order-block__content">
+
+            <div class="order-block__content-date">
+              <a class="order-block__link-date" href="#">
+                Выберите дату
+              </a>
+
+              <span class="order-block__text-date">
+                22 марта
+              </span>
+            </div>
+
+            <div class="order-block__marker-box">
+              <span class="order-block__marker order-block__marker--free">— сводобно</span>
+              <span class="order-block__marker order-block__marker--busy">— занято</span>
+              <span class="order-block__marker order-block__marker--selected">— выбрано вами</span>
+            </div>
+
+            <ul class="order-block__list">
+
+              <li class="order-block__item">
+                <label class="order-block__label" for="9:45">
+                  <input class="order-block__input visually-hidden" id="9:45" type="radio" name="time" value="9:45">
+                  <span class="order-block__radio">9:45</span>
+                </label>
+                <span class="order-block__price">1400 ₽</span>
+              </li>
+
+              <li class="order-block__item">
+                <label class="order-block__label" for="11:00">
+                  <input class="order-block__input visually-hidden" id="11:00" type="radio" name="time" value="11:00">
+                  <span class="order-block__radio">11:00</span>
+                </label>
+                <span class="order-block__price">1400 ₽</span>
+              </li>
+
+              <li class="order-block__item">
+                <label class="order-block__label" for="12:15">
+                  <input class="order-block__input visually-hidden" id="12:15" type="radio" name="time" value="12:15" disabled>
+                  <span class="order-block__radio">12:15</span>
+                </label>
+                <span class="order-block__price">1400 ₽</span>
+              </li>
+
+              <li class="order-block__item">
+                <label class="order-block__label" for="13:30">
+                  <input class="order-block__input visually-hidden" id="13:30" type="radio" name="time" value="13:30" disabled>
+                  <span class="order-block__radio">13:30</span>
+                </label>
+                <span class="order-block__price">1400 ₽</span>
+              </li>
+
+              <li class="order-block__item">
+                <label class="order-block__label" for="14:45">
+                  <input class="order-block__input visually-hidden" id="14:45" type="radio" name="time" value="14:45">
+                  <span class="order-block__radio">14:45</span>
+                </label>
+                <span class="order-block__price">1400 ₽</span>
+              </li>
+
+              <li class="order-block__item">
+                <label class="order-block__label" for="16:00">
+                  <input class="order-block__input visually-hidden" id="16:00" type="radio" name="time" value="16:00" checked>
+                  <span class="order-block__radio">16:00</span>
+                </label>
+                <span class="order-block__price">1500 ₽</span>
+              </li>
+
+              <li class="order-block__item">
+                <label class="order-block__label" for="17:15">
+                  <input class="order-block__input visually-hidden" id="17:15" type="radio" name="time" value="17:15" disabled>
+                  <span class="order-block__radio">17:15</span>
+                </label>
+                <span class="order-block__price">1500 ₽</span>
+              </li>
+
+              <li class="order-block__item">
+                <label class="order-block__label" for="18:30">
+                  <input class="order-block__input visually-hidden" id="18:30" type="radio" name="time" value="18:30">
+                  <span class="order-block__radio">18:30</span>
+                </label>
+                <span class="order-block__price">1500 ₽</span>
+              </li>
+
+              <li class="order-block__item">
+                <label class="order-block__label" for="19:45">
+                  <input class="order-block__input visually-hidden" id="19:45" type="radio" name="time" value="19:45">
+                  <span class="order-block__radio">19:45</span>
+                </label>
+                <span class="order-block__price">1500 ₽</span>
+              </li>
+
+              <li class="order-block__item">
+                <label class="order-block__label" for="21:00">
+                  <input class="order-block__input visually-hidden" id="21:00" type="radio" name="time" value="21:00">
+                  <span class="order-block__radio">21:00</span>
+                </label>
+                <span class="order-block__price">1500 ₽</span>
+              </li>
+
+              <li class="order-block__item">
+                <label class="order-block__label" for="22:15">
+                  <input class="order-block__input visually-hidden" id="22:15" type="radio" name="time" value="22:15" disabled>
+                  <span class="order-block__radio">22:15</span>
+                </label>
+                <span class="order-block__price">1500 ₽</span>
+              </li>
+
+              <li class="order-block__item">
+                <label class="order-block__label" for="23:30">
+                  <input class="order-block__input visually-hidden" id="23:30" type="radio" name="time" value="23:30" disabled>
+                  <span class="order-block__radio">23:30</span>
+                </label>
+                <span class="order-block__price">1500 ₽</span>
+              </li>
+
+
+            </ul>
+
+          </div>
+
+
+
+
+        </div>  <!--/.order-block__inner -->
+      </div>  <!--/.container -->
+    </section>  <!--/.order-block -->
+
+  </main>
+
+  <footer class="intro-page__footer footer">
+    <div class="container">
+      <div class="footer__inner">
+
+        <ul class="footer__inner__list">
+          <li class="footer__list-item">
+            <a class="footer__list-link footer__list-link--insta" href="#">
+              <span class="visually-hidden">Перейти в Insta</span>
+            </a>
+          </li>
+
+          <li class="footer__list-item">
+            <a class="footer__list-link footer__list-link--vk" href="#">
+              <span class="visually-hidden">Перейти в VK</span>
+            </a>
+          </li>
+        </ul>
+
+        <a class="footer__text-question" href="#">
+          <span>?</span> Задать вопрос
+        </a>
+
+
+      </div>  <!--/.footer__inner -->
+    </div>  <!--/.container -->
+  </footer>  <!--/.footer -->
+
+  <div class="overlay-popap">
+  </div>  <!--/.overlay-popap -->
+
+  <section class="city-popap">
+    <div class="city-popap__inner">
+
+      <button class="popap-close" type="button">
+        <svg class="popap-close__btn-svg" viewBox="0 0 16 16" width="16" height="16">
+          <g>
+            <path d="M1 15L15 1.00003" stroke-width="2"/>
+            <path d="M1 1L15 15" stroke-width="2"/>
+          </g>
+        </svg>
+        <span class="visually-hidden">
+          Закрыть
+        </span>
+      </button>
+
+      <h2 class="city-popap__title">
+        Ваш город:
+      </h2>
+
+      <p class="city-popap__gps-text">
+        Определить местоположение
+      </p>
+
+      <p class="city-popap__text">
+        ... или выберите вручную
+      </p>
+
+      <ul class="city-popap__list">
+        <li class="city-popap__list-item">
+          <a class="city-popap__list-link your-city__list-link--active" href="#">
+            Новосибирск
+          </a>
+        </li>
+
+        <li class="ccity-popap__list-item">
+          <a class="city-popap__list-link" href="#">
+            Иркутск
+          </a>
+        </li>
+
+        <li class="city-popap__list-item">
+          <a class="city-popap__list-link" href="#">
+            Смоленск
+          </a>
+        </li>
+
+        <li class="city-popap__list-item">
+          <a class="city-popap__list-link" href="#">
+            Волгоград
+          </a>
+        </li>
+
+        <li class="city-popap__list-item">
+          <a class="city-popap__list-link" href="#">
+            Комсомольск-на-Амуре
+          </a>
+        </li>
+      </ul>
+
+    </div>  <!--/.city-popap__inner -->
+  </section>  <!--/.city-popap -->
+
+  <section class="question-popap">
+    <div class="question-popap__inner">
+
+      <button class="popap-close" type="button">
+        <svg class="popap-close__btn-svg" viewBox="0 0 16 16" width="16" height="16">
+          <g>
+            <path d="M1 15L15 1.00003" stroke-width="2"/>
+            <path d="M1 1L15 15" stroke-width="2"/>
+          </g>
+        </svg>
+        <span class="visually-hidden">
+          Закрыть
+        </span>
+      </button>
+
+      <h2 class="question-popap__title">
+        Задайте вопрос
+      </h2>
+
+      <form class="question-popap__form" method="get" action="https://echo.htmlacademy.ru">
+        <ul class="question-popap__form-list">
+
+          <li class="question-popap__form-list">
+            <label class="question-popap__form-label" for="name">
+              Чтобы мы смогли обращаться к вам, оставьте ваше имя
+            </label>
+            <input class="question-popap__form-input question-popap__form-input--name" id="name" placeholder="Имя" type="text" name="Имя:">
+          </li>
+
+          <li class="question-popap__form-list">
+            <label class="question-popap__form-label" for="mail">
+              Чтобы вы получили ответ, оставьте ваш e-mail
+            </label>
+            <input class="question-popap__form-input question-popap__form-input--mail" id="mail" placeholder="E-mail" type="text" name="E-mail:">
+          </li>
+
+          <li class="question-popap__form-list">
+            <label class="question-popap__form-label" for="question">
+              Ваш вопрос:
+            </label>
+            <textarea class="question-popap__form-textarea question-popap__form-textarea--question" id="question" placeholder="Начните вводить ..." name="Вопрос:"></textarea>
+          </li>
+
+        </ul>
+
+        <button class="question-popap__form-btn btn-page" type="submit">
+          ОТПРАВИТЬ ВОПРОС
+        </button>
+
+        <label class="question-popap__label">
+          <input class="question-popap__input visually-hidden" type="checkbox" name="agree">
+          <span class="question-popap__check-box"></span>
+          <span class="question-popap__text">Я согласен с правилами обработки персональных данных и пользовательским соглашением</span>
+        </label>
+
+      </form>
+
+
+    </div>  <!--/.question-popap__inner -->
+  </section>  <!--/.your-question -->
+
+</body>
+</html>

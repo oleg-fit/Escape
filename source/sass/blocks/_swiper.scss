@@ -1,9 +1,16 @@
 .swiper-container {
+  max-width: 1079px;
   width: 100%;
-  height: 40px;
+  height: 100%;
 }
 
 .swiper-slide {
-  display: flex;
   width: 100%;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
