@@ -1,10 +1,11 @@
 .slider-box__inner {
+  padding-top: 2px;
   padding-left: 104px;
 }
 
 .slider-box__title {
   margin-top: 0;
-  margin-bottom: 5px;
+  margin-bottom: 14px;
 
   font-weight: 500;
   font-size: 14px;
@@ -14,19 +15,203 @@
 
 .slider-box__subtitle {
   margin-top: 0;
-  margin-bottom: 48px;
+  margin-bottom: 53px;
 
   font-weight: 800;
   font-size: 64px;
   line-height: 64px;
 }
 
-.slider-box__item {
+.slider-box__item-text {
+  position: relative;
 
-  background-color: red;
+  display: inline-block;
+  padding-top: 9px;
+  padding-bottom: 11px;
+
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+
+  color: $color-white-dark;
 }
 
-.slider-box__item-text {
-  font-weight: bold;
-  line-height: 14px;
+.slider-box__item-text::before {
+  position: absolute;
+  top: 3px;
+  left: 1px;
+
+  content: "";
+  display: block;
+  width: 26px;
+  height: 30px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider-box__item-text--all {
+  padding-left: 39px;
+}
+
+.slider-box__item-text--all::before {
+  background-image: url("../img/icon-quest-all-quests.svg");
+}
+
+.slider-box__item-text--adventure {
+  padding-left: 63px;
+}
+
+.slider-box__item-text--adventure::before {
+  left: 16px;
+
+  width: 36px;
+  height: 30px;
+
+  background-image: url("../img/icon-quest-adventure.svg");
+}
+
+.slider-box__item-text--horror {
+  padding-left: 99px;
+}
+
+.slider-box__item-text--horror::before {
+  left: 57px;
+
+  width: 30px;
+  height: 30px;
+
+  background-image: url("../img/icon-quest-horror.svg");
+}
+
+.slider-box__item-text--mysticism {
+  padding-left: 86px;
+}
+
+.slider-box__item-text--mysticism::before {
+  left: 44px;
+
+  width: 30px;
+  height: 30px;
+
+  background-image: url("../img/icon-quest-mysticism.svg");
+}
+
+.slider-box__item-text--detective {
+  padding-left: 96px;
+}
+
+.slider-box__item-text--detective::before {
+  left: 44px;
+
+  width: 40px;
+  height: 30px;
+
+  background-image: url("../img/icon-quest-detective.svg");
+}
+
+.slider-box__item-text--sci {
+  padding-left: 98px;
+}
+
+.slider-box__item-text--sci::before {
+  left: 58px;
+
+  width: 28px;
+  height: 30px;
+
+  background-image: url("../img/icon-quest-scifi.svg");
+}
+
+
+/* =====================================================================================
+Media max-width: 1023px*/
+@media (max-width: $tablet-width) {
+  .slider-box__item-text::before {
+    top: 6px;
+  }
+
+  .slider-box__item-text--all{
+    padding-left: 34px;
+  }
+
+  .slider-box__item-text--all::before {
+    width: 21px;
+    height: 24px;
+  }
+
+  .slider-box__item-text--adventure {
+    padding-left: 66px;
+  }
+
+  .slider-box__item-text--adventure::before {
+    left: 25px;
+
+    width: 29px;
+    height: 24px;
+  }
+
+  .slider-box__item-text--horror {
+    padding-left: 109px;
+  }
+
+  .slider-box__item-text--horror::before {
+    left: 75px;
+
+    width: 24px;
+    height: 24px;
+  }
+
+  .slider-box__item-text--mysticism {
+    padding-left: 93px;
+  }
+
+  .slider-box__item-text--mysticism::before {
+    left: 60px;
+
+    width: 24px;
+    height: 24px;
+  }
+
+  .slider-box__item-text--detective {
+    padding-left: 106px;
+    margin-left: 1px;
+  }
+
+  .slider-box__item-text--detective::before {
+    left: 61px;
+
+    width: 32px;
+    height: 24px;
+  }
+
+  .slider-box__item-text--sci::before {
+    left: 73px;
+
+    width: 22px;
+    height: 24px;
+  }
+}
+
+/* =====================================================================================
+Media max-width: 767px*/
+@media (max-width: $mobile-width) {
+  .slider-box__inner {
+    padding-left: 8px;
+  }
+
+  .slider-box__title {
+    margin-bottom: 13px;
+  }
+
+  .slider-box__subtitle {
+    max-width: 200px;
+    margin-bottom: 38px;
+
+
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+
 }

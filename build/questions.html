@@ -559,11 +559,28 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 6,
-      spaceBetween: 0,
-      // centeredSlides: true,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      // init: false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        350: {
+          slidesPerView: 3,
+          spaceBetween: 0,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 0,
+        },
+        1288: {
+          slidesPerView: 6,
+          spaceBetween: 0,
+        },
+      }
     });
   </script>
-
 </body>
 </html>
