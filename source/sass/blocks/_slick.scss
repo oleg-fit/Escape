@@ -1,0 +1,164 @@
+.slick__item {
+  padding-top: 9px;
+  padding-right: 40px;
+  padding-bottom: 11px;
+  padding-left: 40px;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.32);
+}
+
+.slick__slide:first-child .slick__item {
+  padding-left: 0;
+}
+
+.slick__slide:last-child .slick__item {
+  padding-right: 0;
+
+  border-right: none;
+}
+
+.slick__item-text {
+  // position: relative;
+
+  display: flex;
+  align-items: center;
+
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+
+  color: $color-white-dark;
+}
+
+.slick__item-text::before {
+  // position: absolute;
+  // top: -6px;
+  // left: 0;
+  margin-right: 12px;
+
+  content: "";
+  display: block;
+  width: 26px;
+  height: 30px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// .slick__item-text--all {
+//   padding-left: 38px;
+// }
+
+.slick__item-text--all::before {
+  // left: -1px;
+
+  background-image: url("../img/icon-quest-all-quests.svg");
+}
+
+// .slick__item-text--adventure {
+//   padding-left: 48px;
+// }
+
+.slick__item-text--adventure::before {
+  width: 36px;
+  height: 30px;
+
+  background-image: url("../img/icon-quest-adventure.svg");
+}
+
+// .slick__item-text--horror {
+//   padding-left: 44px;
+// }
+
+.slick__item-text--horror::before {
+  // left: 2px;
+
+  width: 30px;
+  height: 30px;
+
+  background-image: url("../img/icon-quest-horror.svg");
+}
+
+// .slick__item-text--mysticism {
+//   padding-left: 42px;
+// }
+
+.slick__item-text--mysticism::before {
+  width: 30px;
+  height: 30px;
+
+  background-image: url("../img/icon-quest-mysticism.svg");
+}
+
+// .slick__item-text--detective {
+//   padding-left: 52px;
+// }
+
+.slick__item-text--detective::before {
+  width: 40px;
+  height: 30px;
+
+  background-image: url("../img/icon-quest-detective.svg");
+}
+
+// .slick__item-text--sci {
+//   padding-left: 40px;
+// }
+
+.slick__item-text--sci::before {
+  // left: 1px;
+
+  width: 28px;
+  height: 30px;
+
+  background-image: url("../img/icon-quest-scifi.svg");
+}
+
+/* =====================================================================================
+Media max-width: 1023px*/
+@media (max-width: $tablet-width) {
+  .slick__item {
+    padding-top: 6px;
+    padding-right: 16px;
+    padding-bottom: 6px;
+    padding-left: 16px;
+  }
+
+  .slick__slide:first-child .slick__item {
+    padding-left: 0;
+  }
+
+  .slick__slide:last-child .slick__item {
+    padding-right: 0;
+  }
+
+  .slick__item-text--all::before {
+    width: 20.8px;
+    height: 24px;
+  }
+
+  .slick__item-text--adventure::before {
+    width: 28.8px;
+    height: 24px;
+  }
+
+  .slick__item-text--horror::before {
+    width: 24px;
+    height: 24px;
+  }
+
+  .slick__item-text--mysticism::before {
+    width: 24px;
+    height: 24px;
+  }
+
+  .slick__item-text--detective::before {
+    width: 32px;
+    height: 24px;
+  }
+
+  .slick__item-text--sci::before {
+    width: 22.4px;
+    height: 24px;
+  }
+}

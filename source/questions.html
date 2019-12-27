@@ -11,7 +11,7 @@
     document.createElement( "picture" );
   </script>
   <title>Лучшие квесты</title>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="questions-page body-js">
@@ -95,52 +95,52 @@
             Выберите тематику
           </h2>
 
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
+          <div class="slider-box__wrapper-slick">
+            <div class="slider-box__slick slick">
 
-              <div class="swiper-slide">
-                <div class="slider-box__item">
-                  <span class="slider-box__item-text slider-box__item-text--all">
+              <div class="slick__slide">
+                <div class="slick__item">
+                  <span class="slick__item-text slick__item-text--all">
                     Все квесты
                   </span>
                 </div>
               </div>
 
-              <div class="swiper-slide">
-                <div class="slider-box__item">
-                  <span class="slider-box__item-text slider-box__item-text--adventure">
+              <div class="slick__slide">
+                <div class="slick__item">
+                  <span class="slick__item-text slick__item-text--adventure">
                     Приключения
                   </span>
                 </div>
               </div>
 
-              <div class="swiper-slide">
-                <div class="slider-box__item">
-                  <span class="slider-box__item-text slider-box__item-text--horror">
+              <div class="slick__slide">
+                <div class="slick__item">
+                  <span class="slick__item-text slick__item-text--horror">
                     Ужасы
                   </span>
                 </div>
               </div>
 
-              <div class="swiper-slide">
-                <div class="slider-box__item">
-                  <span class="slider-box__item-text slider-box__item-text--mysticism">
+              <div class="slick__slide">
+                <div class="slick__item">
+                  <span class="slick__item-text slick__item-text--mysticism">
                     Мистика
                   </span>
                 </div>
               </div>
 
-              <div class="swiper-slide">
-                <div class="slider-box__item">
-                  <span class="slider-box__item-text slider-box__item-text--detective">
+              <div class="slick__slide">
+                <div class="slick__item">
+                  <span class="slick__item-text slick__item-text--detective">
                     Детектив
                   </span>
                 </div>
               </div>
 
-              <div class="swiper-slide">
-                <div class="slider-box__item">
-                  <span class="slider-box__item-text slider-box__item-text--sci">
+              <div class="slick__slide">
+                <div class="slick__item">
+                  <span class="slick__item-text slick__item-text--sci">
                     Sci-fi
                   </span>
                 </div>
@@ -554,33 +554,48 @@
 
 
   <script src="js/script.js"></script>
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-  <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      // init: false,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      breakpoints: {
-        350: {
-          slidesPerView: 3,
-          spaceBetween: 0,
+
+    $('.slick').slick({
+      dots: false,
+      arrows: false,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 6,
+      slidesToScroll: 6,
+      variableWidth: true,
+      responsive: [
+        {
+          breakpoint: 1600,
+          settings: {
+            slidesToShow: 6,
+            slidesToScroll: 6,
+            variableWidth: true
+          }
         },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 0,
+        {
+          breakpoint: 1290,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            variableWidth: true
+          }
         },
-        1288: {
-          slidesPerView: 6,
-          spaceBetween: 0,
-        },
-      }
+        {
+          breakpoint: 890,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            variableWidth: true
+          }
+        }
+      ]
     });
+
   </script>
+
 </body>
 </html>

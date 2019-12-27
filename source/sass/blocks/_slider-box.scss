@@ -22,174 +22,23 @@
   line-height: 64px;
 }
 
-.slider-box__item-text {
-  position: relative;
-
-  display: inline-block;
-  padding-top: 9px;
-  padding-bottom: 11px;
-
-  font-weight: bold;
-  font-size: 14px;
-  letter-spacing: -0.3px;
-
-  color: $color-white-dark;
+.slider-box__wrapper-slick {
+  max-width: 1076px;
 }
-
-.slider-box__item-text::before {
-  position: absolute;
-  top: 3px;
-  left: 1px;
-
-  content: "";
-  display: block;
-  width: 26px;
-  height: 30px;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.slider-box__item-text--all {
-  padding-left: 39px;
-}
-
-.slider-box__item-text--all::before {
-  background-image: url("../img/icon-quest-all-quests.svg");
-}
-
-.slider-box__item-text--adventure {
-  padding-left: 63px;
-}
-
-.slider-box__item-text--adventure::before {
-  left: 16px;
-
-  width: 36px;
-  height: 30px;
-
-  background-image: url("../img/icon-quest-adventure.svg");
-}
-
-.slider-box__item-text--horror {
-  padding-left: 99px;
-}
-
-.slider-box__item-text--horror::before {
-  left: 57px;
-
-  width: 30px;
-  height: 30px;
-
-  background-image: url("../img/icon-quest-horror.svg");
-}
-
-.slider-box__item-text--mysticism {
-  padding-left: 86px;
-}
-
-.slider-box__item-text--mysticism::before {
-  left: 44px;
-
-  width: 30px;
-  height: 30px;
-
-  background-image: url("../img/icon-quest-mysticism.svg");
-}
-
-.slider-box__item-text--detective {
-  padding-left: 96px;
-}
-
-.slider-box__item-text--detective::before {
-  left: 44px;
-
-  width: 40px;
-  height: 30px;
-
-  background-image: url("../img/icon-quest-detective.svg");
-}
-
-.slider-box__item-text--sci {
-  padding-left: 98px;
-}
-
-.slider-box__item-text--sci::before {
-  left: 58px;
-
-  width: 28px;
-  height: 30px;
-
-  background-image: url("../img/icon-quest-scifi.svg");
-}
-
 
 /* =====================================================================================
-Media max-width: 1023px*/
-@media (max-width: $tablet-width) {
-  .slider-box__item-text::before {
-    top: 6px;
+Media max-width: 1290px*/
+@media (max-width: 1290px) {
+  .slider-box__wrapper-slick {
+    max-width: 710px;
   }
+}
 
-  .slider-box__item-text--all{
-    padding-left: 34px;
-  }
-
-  .slider-box__item-text--all::before {
-    width: 21px;
-    height: 24px;
-  }
-
-  .slider-box__item-text--adventure {
-    padding-left: 66px;
-  }
-
-  .slider-box__item-text--adventure::before {
-    left: 25px;
-
-    width: 29px;
-    height: 24px;
-  }
-
-  .slider-box__item-text--horror {
-    padding-left: 109px;
-  }
-
-  .slider-box__item-text--horror::before {
-    left: 75px;
-
-    width: 24px;
-    height: 24px;
-  }
-
-  .slider-box__item-text--mysticism {
-    padding-left: 93px;
-  }
-
-  .slider-box__item-text--mysticism::before {
-    left: 60px;
-
-    width: 24px;
-    height: 24px;
-  }
-
-  .slider-box__item-text--detective {
-    padding-left: 106px;
-    margin-left: 1px;
-  }
-
-  .slider-box__item-text--detective::before {
-    left: 61px;
-
-    width: 32px;
-    height: 24px;
-  }
-
-  .slider-box__item-text--sci::before {
-    left: 73px;
-
-    width: 22px;
-    height: 24px;
+/* =====================================================================================
+Media max-width: 888px*/
+@media (max-width: 888px) {
+  .slider-box__wrapper-slick {
+    max-width: 341px;
   }
 }
 
@@ -206,12 +55,11 @@ Media max-width: 767px*/
 
   .slider-box__subtitle {
     max-width: 200px;
-    margin-bottom: 38px;
+    margin-bottom: 39px;
 
 
     font-size: 36px;
     line-height: 40px;
   }
-
 
 }
