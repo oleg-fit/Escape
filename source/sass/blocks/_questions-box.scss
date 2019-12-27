@@ -206,7 +206,7 @@
 Media max-width: 767px*/
 @media (max-width: $mobile-width) {
   .questions-box__innner {
-    padding-top: 38px;
+    padding-top: 3px;
     padding-left: 0;
   }
 
@@ -217,9 +217,6 @@ Media max-width: 767px*/
 
   .questions-box__list-item {
     max-width: 328px;
-  }
-
-  .questions-box__list-item {
     margin-bottom: 15px;
   }
 }
