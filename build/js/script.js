@@ -9,6 +9,14 @@ var overlayPopap = document.querySelector('.overlay-popap');
 var linkBurgerMenu = document.querySelector('.header__burger');
 var bodyPage = document.querySelector('.body-js');
 
+var form = document.querySelector('.question-popap__form');
+var nameInput = form.querySelector('.js-name');
+var nameErrorBlock = form.querySelector('.error-name');
+var emailInput = form.querySelector('.js-email');
+var emailErrorBlock = form.querySelector('.error-email');
+var textInput = form.querySelector('.js-text');
+var textErrorBlock = form.querySelector('.error-text');
+
 if (linkYourCity) {
 
   linkYourCity.addEventListener('click', function (evt) {
@@ -50,6 +58,7 @@ if (linkQuestion) {
   linkQuestion.addEventListener('click', function (evt) {
     evt.preventDefault();
     popapQuestion.classList.add('question-popap--show');
+    nameInput.focus();
     overlayPopap.classList.add('overlay-popap--show');
   });
 }
@@ -95,13 +104,7 @@ if (linkBurgerMenu) {
 
 
 // Валидация формы
-var form = document.querySelector('.question-popap__form');
-var nameInput = form.querySelector('.js-name');
-var nameErrorBlock = form.querySelector('.error-name');
-var emailInput = form.querySelector('.js-email');
-var emailErrorBlock = form.querySelector('.error-email');
-var textInput = form.querySelector('.js-text');
-var textErrorBlock = form.querySelector('.error-text');
+
 
 function validateEmail(email) {
   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
