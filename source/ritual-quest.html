@@ -247,22 +247,31 @@
             <label class="question-popap__form-label" for="name">
               Чтобы мы смогли обращаться к вам, оставьте ваше имя
             </label>
-            <input class="question-popap__form-input question-popap__form-input--name" id="name" placeholder="Имя" type="text" name="Имя:" data-rule="name">
+            <input class="question-popap__form-input question-popap__form-input--name question-popap__form-input--error js-name" id="name" placeholder="Имя" type="text" name="Имя:" data-rule="name">
+            <p class="error error-name">
+              Введён некорректное имя, попробуйте заново
+            </p>
           </li>
 
           <li class="question-popap__form-item">
             <label class="question-popap__form-label" for="mail">
               Чтобы вы получили ответ, оставьте ваш e-mail
             </label>
-            <input class="question-popap__form-input question-popap__form-input--mail" id="mail" placeholder="E-mail" type="text" name="E-mail:" data-rule="mail">
+            <input class="question-popap__form-input question-popap__form-input--mail js-email" id="mail" placeholder="E-mail" type="text" name="E-mail:" data-rule="mail">
+            <p class="error error-email">
+              Введён некорректный e-mail, попробуйте заново
+            </p>
           </li>
 
           <li class="question-popap__form-item">
             <label class="question-popap__form-label" for="question">
               Ваш вопрос:
             </label>
-            <textarea class="question-popap__form-textarea question-popap__form-textarea--question" id="question" placeholder="Начните вводить ..." name="Вопрос:"></textarea>
+            <textarea class="question-popap__form-textarea question-popap__form-textarea--question js-text" id="question" placeholder="Начните вводить ..." name="Вопрос:"></textarea>
           </li>
+          <p class="error error-text">
+            Введён некорректный вопрос, попробуйте заново
+          </p>
 
         </ul>
 
