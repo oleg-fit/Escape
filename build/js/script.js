@@ -1,21 +1,6 @@
 'use strict';
-// var pageHeader = document.querySelector('.page-header');
-// var headerToggle = document.querySelector('.page-header__toggle');
-
-// pageHeader.classList.remove('page-header--nojs');
-
-// headerToggle.addEventListener('click', function () {
-//   if (pageHeader.classList.contains('page-header--closed')) {
-//     pageHeader.classList.remove('page-header--closed');
-//     pageHeader.classList.add('page-header--opened');
-//   } else {
-//     pageHeader.classList.add('page-header--closed');
-//     pageHeader.classList.remove('page-header--opened');
-//   }
-// });
-
 var popapYourCity = document.querySelector('.city-popap');
-var popapQuestion= document.querySelector('.question-popap');
+var popapQuestion = document.querySelector('.question-popap');
 var linkYourCity = document.querySelector('.header__contacts-city');
 var linkQuestion = document.querySelector('.footer__text-question');
 var linkClosePopapYourCity = document.querySelector('.city-popap .popap-close');
@@ -26,22 +11,22 @@ var bodyPage = document.querySelector('.body-js');
 
 if (linkYourCity) {
 
-  linkYourCity.addEventListener('click', function(evt) {
+  linkYourCity.addEventListener('click', function (evt) {
     evt.preventDefault();
     popapYourCity.classList.add('city-popap--show');
     overlayPopap.classList.add('overlay-popap--show');
   });
 }
 
-if(linkClosePopapYourCity) {
+if (linkClosePopapYourCity) {
 
-  linkClosePopapYourCity.addEventListener('click', function(evt) {
+  linkClosePopapYourCity.addEventListener('click', function (evt) {
     evt.preventDefault();
     popapYourCity.classList.remove('city-popap--show');
     overlayPopap.classList.remove('overlay-popap--show');
   });
 
-  window.addEventListener('keydown',  function(evt) {
+  window.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 27) {
       if (popapYourCity.classList.contains('city-popap--show')) {
         evt.preventDefault();
@@ -51,7 +36,7 @@ if(linkClosePopapYourCity) {
     }
   });
 
-  overlayPopap.addEventListener('click', function(evt) {
+  overlayPopap.addEventListener('click', function (evt) {
     if (popapYourCity.classList.contains('city-popap--show')) {
       evt.preventDefault();
       popapYourCity.classList.remove('city-popap--show');
@@ -62,22 +47,22 @@ if(linkClosePopapYourCity) {
 
 if (linkQuestion) {
 
-  linkQuestion.addEventListener('click', function(evt) {
+  linkQuestion.addEventListener('click', function (evt) {
     evt.preventDefault();
     popapQuestion.classList.add('question-popap--show');
     overlayPopap.classList.add('overlay-popap--show');
   });
 }
 
-if(linkClosePopapQuestion) {
+if (linkClosePopapQuestion) {
 
-  linkClosePopapQuestion.addEventListener('click', function(evt) {
+  linkClosePopapQuestion.addEventListener('click', function (evt) {
     evt.preventDefault();
     popapQuestion.classList.remove('question-popap--show');
     overlayPopap.classList.remove('overlay-popap--show');
   });
 
-  window.addEventListener('keydown',  function(evt) {
+  window.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 27) {
       if (popapQuestion.classList.contains('question-popap--show')) {
         evt.preventDefault();
@@ -87,7 +72,7 @@ if(linkClosePopapQuestion) {
     }
   });
 
-  overlayPopap.addEventListener('click', function(evt) {
+  overlayPopap.addEventListener('click', function (evt) {
     if (popapQuestion.classList.contains('question-popap--show')) {
       evt.preventDefault();
       popapQuestion.classList.remove('question-popap--show');
@@ -96,16 +81,58 @@ if(linkClosePopapQuestion) {
   });
 }
 
-if(linkBurgerMenu) {
-  linkBurgerMenu.addEventListener('click', function(evt) {
+if (linkBurgerMenu) {
+  linkBurgerMenu.addEventListener('click', function (evt) {
     if (bodyPage.classList.contains('opened__header')) {
       evt.preventDefault();
       bodyPage.classList.remove('opened__header');
-    }
-
-    else {
+    } else {
       evt.preventDefault();
       bodyPage.classList.add('opened__header');
     }
   });
 }
+
+
+// Валидация формы
+var form = document.querySelector('.question-popap__form');
+var nameInput = form.querySelector('.js-name');
+var nameErrorBlock = form.querySelector('.error-name');
+var emailInput = form.querySelector('.js-email');
+var emailErrorBlock = form.querySelector('.error-email');
+var textInput = form.querySelector('.js-text');
+var textErrorBlock = form.querySelector('.error-text');
+
+function validation(e) {
+  if (nameInput.value === '') {
+    e.preventDefault();
+    nameErrorBlock.classList.add('error-name--show');
+    nameInput.classList.add('question-popap__form-input--invalid');
+  } else {
+    nameErrorBlock.classList.remove('error-name--show');
+    nameInput.classList.remove('question-popap__form-input--invalid');
+    nameInput.classList.add('question-popap__form-input--valid');
+  }
+
+  if (emailInput.value === '') {
+    e.preventDefault();
+    emailErrorBlock.classList.add('error-email--show');
+    emailInput.classList.add('question-popap__form-input--invalid');
+  } else {
+    emailErrorBlock.classList.remove('error-email--show');
+    emailInput.classList.remove('question-popap__form-input--invalid');
+    emailInput.classList.add('question-popap__form-input--valid');
+  }
+
+  if (textInput.value === '') {
+    e.preventDefault();
+    textErrorBlock.classList.add('error-text--show');
+    textInput.classList.add('question-popap__form-input--invalid');
+  } else {
+    textErrorBlock.classList.remove('error-text--show');
+    textInput.classList.remove('question-popap__form-input--invalid');
+    textInput.classList.add('question-popap__form-input--valid');
+  }
+}
+
+form.addEventListener('submit', validation);

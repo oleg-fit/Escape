@@ -1,19 +1,4 @@
 'use strict';
-// var pageHeader = document.querySelector('.page-header');
-// var headerToggle = document.querySelector('.page-header__toggle');
-
-// pageHeader.classList.remove('page-header--nojs');
-
-// headerToggle.addEventListener('click', function () {
-//   if (pageHeader.classList.contains('page-header--closed')) {
-//     pageHeader.classList.remove('page-header--closed');
-//     pageHeader.classList.add('page-header--opened');
-//   } else {
-//     pageHeader.classList.add('page-header--closed');
-//     pageHeader.classList.remove('page-header--opened');
-//   }
-// });
-
 var popapYourCity = document.querySelector('.city-popap');
 var popapQuestion = document.querySelector('.question-popap');
 var linkYourCity = document.querySelector('.header__contacts-city');
@@ -107,3 +92,47 @@ if (linkBurgerMenu) {
     }
   });
 }
+
+
+// Валидация формы
+var form = document.querySelector('.question-popap__form');
+var nameInput = form.querySelector('.js-name');
+var nameErrorBlock = form.querySelector('.error-name');
+var emailInput = form.querySelector('.js-email');
+var emailErrorBlock = form.querySelector('.error-email');
+var textInput = form.querySelector('.js-text');
+var textErrorBlock = form.querySelector('.error-text');
+
+function validation(e) {
+  if (nameInput.value === '') {
+    e.preventDefault();
+    nameErrorBlock.classList.add('error-name--show');
+    nameInput.classList.add('question-popap__form-input--invalid');
+  } else {
+    nameErrorBlock.classList.remove('error-name--show');
+    nameInput.classList.remove('question-popap__form-input--invalid');
+    nameInput.classList.add('question-popap__form-input--valid');
+  }
+
+  if (emailInput.value === '') {
+    e.preventDefault();
+    emailErrorBlock.classList.add('error-email--show');
+    emailInput.classList.add('question-popap__form-input--invalid');
+  } else {
+    emailErrorBlock.classList.remove('error-email--show');
+    emailInput.classList.remove('question-popap__form-input--invalid');
+    emailInput.classList.add('question-popap__form-input--valid');
+  }
+
+  if (textInput.value === '') {
+    e.preventDefault();
+    textErrorBlock.classList.add('error-text--show');
+    textInput.classList.add('question-popap__form-input--invalid');
+  } else {
+    textErrorBlock.classList.remove('error-text--show');
+    textInput.classList.remove('question-popap__form-input--invalid');
+    textInput.classList.add('question-popap__form-input--valid');
+  }
+}
+
+form.addEventListener('submit', validation);
