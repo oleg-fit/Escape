@@ -15,12 +15,47 @@
 }
 
 .questions-box__list-item {
+  position: relative;
+
   max-width: 344px;
   width: 100%;
   margin-right: 24px;
   margin-bottom: 32px;
 
   // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.questions-box__list-hit {
+  position: absolute;
+  top: 14px;
+  right: 17px;
+
+  display: flex;
+  padding-top: 4px;
+  padding-left: 12px;
+  padding-bottom: 4px;
+  padding-right: 12px;
+
+  font-weight: 500;
+  font-size: 12px;
+
+  color: $color-white-dark;
+
+  border: 2px solid rgba(242, 137, 15, 0.74);
+  border-radius: 25px;
+}
+
+.questions-box__list-hit::before {
+  content: "";
+
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-right: 2px;
+
+  background-image: url("../img/icon-star.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .questions-box__list-link {
