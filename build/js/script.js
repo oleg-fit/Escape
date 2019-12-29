@@ -103,6 +103,11 @@ var emailErrorBlock = form.querySelector('.error-email');
 var textInput = form.querySelector('.js-text');
 var textErrorBlock = form.querySelector('.error-text');
 
+function validateEmail(email) {
+  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
+}
+
 function validation(e) {
   if (nameInput.value === '') {
     e.preventDefault();
@@ -114,7 +119,7 @@ function validation(e) {
     nameInput.classList.add('question-popap__form-input--valid');
   }
 
-  if (emailInput.value === '') {
+  if (validateEmail(emailInput.value) === false) {
     e.preventDefault();
     emailErrorBlock.classList.add('error-email--show');
     emailInput.classList.add('question-popap__form-input--invalid');
