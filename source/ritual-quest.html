@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Квест Ритуал">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Квест "Ритуал"</title>
 </head>
-<body class="ritual-quest body-js">
+<body class="body-js">
 
   <header class="header">
     <div class="container">
@@ -16,7 +17,7 @@
         <a class="header__link" href="index.html">
           <picture>
             <source media="(max-width: 1023px)" srcset="img/logo-header-mobile.svg">
-            <img class="header__logo-img" alt="логотип Escape Room" src="img/logo-header-desktop.svg" width="134" height="50">
+            <img alt="логотип Escape Room" src="img/logo-header-desktop.svg" width="134" height="50">
           </picture>
         </a>
 
@@ -65,9 +66,9 @@
             <span class="header__contacts-text">НОВОСИБИРСК</span>
           </a>
 
-          <p class="header__contacts-tel">
+          <a href="tel:83832840160" class="header__contacts-tel">
             8 (383) 284 01 60
-          </p>
+          </a>
         </div>
 
       </div>  <!--/.header__inner -->
@@ -84,11 +85,11 @@
             Все квесты
           </a>
 
-          <p class="quest__subtitle">
+          <h2>
             хоррор, мистика
-          </p>
+          </h2>
 
-          <h1 class="quest__title">
+          <h1>
             РИТУАЛ
           </h1>
 
@@ -100,7 +101,7 @@
               </span>
             </li>
 
-            <li class="quest__list-item">
+            <li class="quest__list-item quest__list-item--border">
               <span class="quest__list-text quest__list-text--people">
                 3–5 чел
               </span>
@@ -114,7 +115,7 @@
 
           </ul>
 
-          <p class="quest__text">
+          <p>
             Тяжелый воздух угнетает, в ночи вы оказыватесь запертыми в сыром помещении вместе с другими ничего не понимающими жертвами. Сквозь щель в двери вы видите, как некто в капюшоне готовит площадку как будто для проведения мистического обряда. Удастся ли&nbsp;вам&nbsp;выбраться, пока вы не станете жертвой ритуала?
           </p>
 
@@ -188,7 +189,7 @@
 
       <ul class="city-popap__list">
         <li class="city-popap__list-item">
-          <a class="city-popap__list-link city__list-link--active" href="#">
+          <a class="city-popap__list-link city-popap__list-link--active" href="#">
             Новосибирск
           </a>
         </li>
@@ -240,14 +241,14 @@
         Задайте вопрос
       </h2>
 
-      <form class="question-popap__form" method="get" action="https://echo.htmlacademy.ru">
+      <form class="question-popap__form" method="get" action="https://echo.htmlacademy.ru" autocomplete="on">
         <ul class="question-popap__form-list">
 
           <li class="question-popap__form-item">
             <label class="question-popap__form-label" for="name">
               Чтобы мы смогли обращаться к вам, оставьте ваше имя
             </label>
-            <input class="question-popap__form-input question-popap__form-input--name question-popap__form-input--error js-name" id="name" placeholder="Имя" type="text" name="Имя:" data-rule="name">
+            <input id="name" placeholder="Имя" type="text" name="Имя:" data-rule="name">
             <p class="error error-name">
               Введён некорректное имя, попробуйте заново
             </p>
@@ -257,7 +258,7 @@
             <label class="question-popap__form-label" for="mail">
               Чтобы вы получили ответ, оставьте ваш e-mail
             </label>
-            <input class="question-popap__form-input question-popap__form-input--mail js-email" id="mail" placeholder="E-mail" type="text" name="E-mail:" data-rule="mail">
+            <input id="mail" placeholder="E-mail" type="text" name="E-mail:" data-rule="mail">
             <p class="error error-email">
               Введён некорректный e-mail, попробуйте заново
             </p>
@@ -267,11 +268,11 @@
             <label class="question-popap__form-label" for="question">
               Ваш вопрос:
             </label>
-            <textarea class="question-popap__form-textarea question-popap__form-textarea--question js-text" id="question" placeholder="Начните вводить ..." name="Вопрос:"></textarea>
+            <textarea id="question" placeholder="Начните вводить ..." name="Вопрос:"></textarea>
+            <p class="error error-text">
+              Введён некорректный вопрос, попробуйте заново
+            </p>
           </li>
-          <p class="error error-text">
-            Введён некорректный вопрос, попробуйте заново
-          </p>
 
         </ul>
 

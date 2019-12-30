@@ -1,15 +1,17 @@
 .overlay-popap {
-  position: absolute;
-  top: 0;
-
   display: none;
-  height: 100vh;
-  width: 100%;
-
-  background: $color-overlay;
-  opacity: 0.96;
 }
 
 .overlay-popap--show {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+
   display: block;
+
+  background: $color-overlay;
+  opacity: 0.96;
 }

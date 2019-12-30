@@ -2,7 +2,7 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  z-index: 1000;
+  z-index: 100;
 
   max-width: 480px;
   width: 100%;
@@ -35,34 +35,32 @@
   list-style: none;
 }
 
-.question-popap__form-item {
-  margin-bottom: 2px;
+.question-popap__form-list .error {
+  display: none;
+
+  margin-top: -31px;
+  margin-bottom: 0;
+  padding-left: 24px;
+
+  font-weight: 500;
+  font-size: 12px;
+  color: #f2901d;
 }
 
-.question-popap__form-list {
-  .error {
-    display: none;
+.question-popap__form-list .error-name--show {
+  display: block;
+}
 
-    margin-top: -31px;
-    margin-bottom: 0;
-    padding-left: 24px;
+.question-popap__form-list .error-email--show {
+  display: block;
+}
 
-    font-weight: 500;
-    font-size: 12px;
-    color: #f2901d;
-  }
+.question-popap__form-list .error-text--show {
+  display: block;
+}
 
-  .error-name--show {
-    display: block;
-  }
-
-  .error-email--show {
-    display: block;
-  }
-
-  .error-text--show {
-    display: block;
-  }
+.question-popap__form-item {
+  margin-bottom: 2px;
 }
 
 .question-popap__title {
@@ -84,8 +82,8 @@
   color: $color-white-dark;
 }
 
-.question-popap__form-input,
-.question-popap__form-textarea {
+.question-popap__form input,
+.question-popap__form textarea {
   max-width: 400px;
   width: 100%;
   margin-bottom: 32px;
@@ -104,25 +102,27 @@
   background: transparent;
 }
 
-.question-popap__form-input::placeholder,
-.question-popap__form-textarea::placeholder {
+.question-popap__form input::placeholder,
+.question-popap__form textarea::placeholder {
   font-weight: 500;
   font-size: 14px;
   line-height: 14px;
   color: rgba($color-white-dark, 0.64);
 }
 
-.question-popap__form-input--valid {
+.question-popap__form .input--valid {
   border-color: #2cdb52;
 }
 
-.question-popap__form-input--invalid {
+.question-popap__form .input--invalid {
   border-color: #f2901d;
 }
 
 .question-popap__form-textarea {
   min-height: 120px;
   margin-bottom: 26px;
+
+  resize: none;
 }
 
 .question-popap__form-btn {
@@ -237,13 +237,13 @@ Media max-width: 767px*/
     line-height: 22px;
   }
 
-  .question-popap__form-input,
-  .question-popap__form-textarea {
+  .question-popap__form input,
+  .question-popap__form textarea {
     max-width: 319px;
     margin-right: 8px;
   }
 
-  .question-popap__form-textarea {
+  .question-popap__form textarea {
     margin-bottom: 29px;
   }
 

@@ -10,11 +10,11 @@ var linkBurgerMenu = document.querySelector('.header__burger');
 var bodyPage = document.querySelector('.body-js');
 
 var form = document.querySelector('.question-popap__form');
-var nameInput = form.querySelector('.js-name');
+var nameInput = form.querySelector('#name');
 var nameErrorBlock = form.querySelector('.error-name');
-var emailInput = form.querySelector('.js-email');
+var emailInput = form.querySelector('#mail');
 var emailErrorBlock = form.querySelector('.error-email');
-var textInput = form.querySelector('.js-text');
+var textInput = form.querySelector('#question');
 var textErrorBlock = form.querySelector('.error-text');
 
 if (linkYourCity) {
@@ -115,31 +115,31 @@ function validation(e) {
   if (nameInput.value === '') {
     e.preventDefault();
     nameErrorBlock.classList.add('error-name--show');
-    nameInput.classList.add('question-popap__form-input--invalid');
+    nameInput.classList.add('input--invalid');
   } else {
     nameErrorBlock.classList.remove('error-name--show');
-    nameInput.classList.remove('question-popap__form-input--invalid');
-    nameInput.classList.add('question-popap__form-input--valid');
+    nameInput.classList.remove('input--invalid');
+    nameInput.classList.add('input--valid');
   }
 
   if (validateEmail(emailInput.value) === false) {
     e.preventDefault();
     emailErrorBlock.classList.add('error-email--show');
-    emailInput.classList.add('question-popap__form-input--invalid');
+    emailInput.classList.add('input--invalid');
   } else {
     emailErrorBlock.classList.remove('error-email--show');
-    emailInput.classList.remove('question-popap__form-input--invalid');
-    emailInput.classList.add('question-popap__form-input--valid');
+    emailInput.classList.remove('input--invalid');
+    emailInput.classList.add('input--valid');
   }
 
   if (textInput.value === '') {
     e.preventDefault();
     textErrorBlock.classList.add('error-text--show');
-    textInput.classList.add('question-popap__form-input--invalid');
+    textInput.classList.add('input--invalid');
   } else {
     textErrorBlock.classList.remove('error-text--show');
-    textInput.classList.remove('question-popap__form-input--invalid');
-    textInput.classList.add('question-popap__form-input--valid');
+    textInput.classList.remove('input--invalid');
+    textInput.classList.add('input--valid');
   }
 }
 

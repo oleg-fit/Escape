@@ -1,9 +1,15 @@
+.slider-box__wrapper {
+  padding-top: 122px;
+
+  background: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
+}
+
 .slider-box__inner {
   padding-top: 2px;
   padding-left: 104px;
 }
 
-.slider-box__title {
+.slider-box h1 {
   margin-top: 0;
   margin-bottom: 14px;
 
@@ -13,7 +19,7 @@
   color: $color-orange;
 }
 
-.slider-box__subtitle {
+.slider-box h2 {
   margin-top: 0;
   margin-bottom: 51px;
 
@@ -45,15 +51,19 @@ Media max-width: 888px*/
 /* =====================================================================================
 Media max-width: 767px*/
 @media (max-width: $mobile-width) {
+  .slider-box__wrapper {
+    padding-top: 96px;
+  }
+
   .slider-box__inner {
     padding-left: 8px;
   }
 
-  .slider-box__title {
+  .slider-box h1 {
     margin-bottom: 13px;
   }
 
-  .slider-box__subtitle {
+  .slider-box h2 {
     max-width: 200px;
     margin-bottom: 41px;
 

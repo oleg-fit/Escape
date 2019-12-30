@@ -4,19 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Квесты в Новосибирске">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <title>Выбор квеста</title>
 </head>
-<body class="questions-page body-js">
+<body class="body-js">
 
-  <header class="questions-page__header header">
+  <header class="header header--bg">
     <div class="container">
       <div class="header__inner">
 
         <a class="header__link" href="index.html">
           <picture>
             <source media="(max-width: 1023px)" srcset="img/logo-header-mobile.svg">
-            <img class="header__logo-img" alt="логотип Escape Room" src="img/logo-header-desktop.svg" width="134" height="50">
+            <img alt="логотип Escape Room" src="img/logo-header-desktop.svg" width="134" height="50">
           </picture>
         </a>
 
@@ -28,7 +30,7 @@
           <ul class="main-nav__list">
 
             <li class="main-nav__list-item">
-              <a class="main-nav__list-link main-nav__list-link--active" href="questions.html">
+              <a class="main-nav__list-link" href="questions.html">
                 КВЕСТЫ
               </a>
             </li>
@@ -65,338 +67,343 @@
             <span class="header__contacts-text">НОВОСИБИРСК</span>
           </a>
 
-          <p class="header__contacts-tel">
+          <a href="tel:83832840160" class="header__contacts-tel">
             8 (383) 284 01 60
-          </p>
+          </a>
         </div>
 
       </div>  <!--/.header__inner -->
     </div>  <!--/.container -->
   </header>  <!--/.header -->
 
-  <main class="questions-page__main">
+  <main>
 
-    <section class="slider-box">
-      <div class="container">
-        <div class="slider-box__inner">
+    <div class="slider-box__wrapper">
+      <section class="slider-box">
+        <div class="container">
+          <div class="slider-box__inner">
 
-          <h1 class="slider-box__title">
-            квесты в Новосибирске
-          </h1>
+            <h1 class="slider-box__title">
+              квесты в Новосибирске
+            </h1>
 
-          <h2 class="slider-box__subtitle">
-            Выберите тематику
-          </h2>
+            <h2 class="slider-box__subtitle">
+              Выберите тематику
+            </h2>
 
-          <div class="slider-box__wrapper-slick">
-            <div class="slider-box__slick slick">
+            <div class="slider-box__wrapper-slick">
+              <div class="slider-box__slick slick">
 
-              <div class="slick__slide">
-                <div class="slick__item">
-                  <span class="slick__item-text slick__item-text--all">
-                    Все квесты
-                  </span>
+                <div class="slick__slide">
+                  <div class="slick__item">
+                    <span class="slick__item-text slick__item-text--all">
+                      Все квесты
+                    </span>
+                  </div>
                 </div>
-              </div>
 
-              <div class="slick__slide">
-                <div class="slick__item">
-                  <span class="slick__item-text slick__item-text--adventure">
-                    Приключения
-                  </span>
+                <div class="slick__slide">
+                  <div class="slick__item">
+                    <span class="slick__item-text slick__item-text--adventure">
+                      Приключения
+                    </span>
+                  </div>
                 </div>
-              </div>
 
-              <div class="slick__slide">
-                <div class="slick__item">
-                  <span class="slick__item-text slick__item-text--horror">
-                    Ужасы
-                  </span>
+                <div class="slick__slide">
+                  <div class="slick__item">
+                    <span class="slick__item-text slick__item-text--horror">
+                      Ужасы
+                    </span>
+                  </div>
                 </div>
-              </div>
 
-              <div class="slick__slide">
-                <div class="slick__item">
-                  <span class="slick__item-text slick__item-text--mysticism">
-                    Мистика
-                  </span>
+                <div class="slick__slide">
+                  <div class="slick__item">
+                    <span class="slick__item-text slick__item-text--mysticism">
+                      Мистика
+                    </span>
+                  </div>
                 </div>
-              </div>
 
-              <div class="slick__slide">
-                <div class="slick__item">
-                  <span class="slick__item-text slick__item-text--detective">
-                    Детектив
-                  </span>
+                <div class="slick__slide">
+                  <div class="slick__item">
+                    <span class="slick__item-text slick__item-text--detective">
+                      Детектив
+                    </span>
+                  </div>
                 </div>
-              </div>
 
-              <div class="slick__slide">
-                <div class="slick__item">
-                  <span class="slick__item-text slick__item-text--sci">
-                    Sci-fi
-                  </span>
+                <div class="slick__slide">
+                  <div class="slick__item">
+                    <span class="slick__item-text slick__item-text--sci">
+                      Sci-fi
+                    </span>
+                  </div>
                 </div>
-              </div>
 
+              </div>
             </div>
-          </div>
 
-        </div>  <!--/.slider-box__inner -->
-      </div>  <!--/.container -->
-    </section>  <!--/.slider -->
+          </div>  <!--/.slider-box__inner -->
+        </div>  <!--/.container -->
+      </section>  <!--/.slider -->
 
+      <section class="questions-box">
+        <div class="container">
+          <div class="questions-box__innner">
 
-    <section class="questions-box">
-      <div class="container">
-        <div class="questions-box__innner">
+            <h2 class="visually-hidden">
+              Выберите квест
+            </h2>
 
-          <ul class="questions-box__list">
+            <ul class="questions-box__list">
 
-            <li class="questions-box__list-item">
-              <span class="questions-box__list-hit">Хит</span>
-              <a class="questions-box__list-link questions-box__list-link--crypt" href="#">
-                <div class="questions-box__list-content">
-                  <h3 class="questions-box__list-title">
-                    Склеп
-                  </h3>
-                  <p class="questions-box__list-adress">
-                    пр. Ленина, 37
-                  </p>
-                  <div class="questions-box__description">
-                    <span class="questions-box__description-people">
-                      2-5 чел
-                    </span>
-                    <span class="questions-box__description-level">
-                      сложный
-                    </span>
+              <li class="questions-box__list-item">
+                <span class="questions-box__list-hit">Хит</span>
+                <a class="questions-box__list-link questions-box__list-link--crypt" href="#">
+                  <div class="questions-box__list-content">
+                    <h3 class="questions-box__list-title">
+                      Склеп
+                    </h3>
+                    <p class="questions-box__list-adress">
+                      пр. Ленина, 37
+                    </p>
+                    <div class="questions-box__description">
+                      <span class="questions-box__description-people">
+                        2-5 чел
+                      </span>
+                      <span class="questions-box__description-level">
+                        сложный
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </li>
+                </a>
+              </li>
 
-            <li class="questions-box__list-item">
-              <span class="questions-box__list-hit">Хит</span>
-              <a class="questions-box__list-link questions-box__list-link--hit questions-box__list-link--maniac" href="maniac-quest.html">
-                <div class="questions-box__list-content">
-                  <h3 class="questions-box__list-title">
-                    Маньяк
-                  </h3>
-                  <p class="questions-box__list-adress">
-                    Верхнетецкая, 32
-                  </p>
-                  <div class="questions-box__description">
-                    <span class="questions-box__description-people">
-                      3–6 чел
-                    </span>
-                    <span class="questions-box__description-level">
-                      средний
-                    </span>
+              <li class="questions-box__list-item">
+                <span class="questions-box__list-hit">Хит</span>
+                <a class="questions-box__list-link questions-box__list-link--hit questions-box__list-link--maniac" href="maniac-quest.html">
+                  <div class="questions-box__list-content">
+                    <h3 class="questions-box__list-title">
+                      Маньяк
+                    </h3>
+                    <p class="questions-box__list-adress">
+                      Верхнетецкая, 32
+                    </p>
+                    <div class="questions-box__description">
+                      <span class="questions-box__description-people">
+                        3–6 чел
+                      </span>
+                      <span class="questions-box__description-level">
+                        средний
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </li>
+                </a>
+              </li>
 
-            <li class="questions-box__list-item">
-              <a class="questions-box__list-link questions-box__list-link--ritual" href="ritual-quest.html">
-                <div class="questions-box__list-content">
-                  <h3 class="questions-box__list-title">
-                    Ритуал
-                  </h3>
-                  <p class="questions-box__list-adress">
-                    пр. Ленина, 37
-                  </p>
-                  <div class="questions-box__description">
-                    <span class="questions-box__description-people">
-                      3–5 чел
-                    </span>
-                    <span class="questions-box__description-level">
-                      сложный
-                    </span>
+              <li class="questions-box__list-item">
+                <a class="questions-box__list-link questions-box__list-link--ritual" href="ritual-quest.html">
+                  <div class="questions-box__list-content">
+                    <h3 class="questions-box__list-title">
+                      Ритуал
+                    </h3>
+                    <p class="questions-box__list-adress">
+                      пр. Ленина, 37
+                    </p>
+                    <div class="questions-box__description">
+                      <span class="questions-box__description-people">
+                        3–5 чел
+                      </span>
+                      <span class="questions-box__description-level">
+                        сложный
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </li>
+                </a>
+              </li>
 
-            <li class="questions-box__list-item">
-              <a class="questions-box__list-link questions-box__list-link--history" href="#">
-                <div class="questions-box__list-content">
-                  <h3 class="questions-box__list-title">
-                    История призраков
-                  </h3>
-                  <p class="questions-box__list-adress">
-                    Новослободская, 2а
-                  </p>
-                  <div class="questions-box__description">
-                    <span class="questions-box__description-people">
-                      5–6 чел
-                    </span>
-                    <span class="questions-box__description-level">
-                      легкий
-                    </span>
+              <li class="questions-box__list-item">
+                <a class="questions-box__list-link questions-box__list-link--history" href="#">
+                  <div class="questions-box__list-content">
+                    <h3 class="questions-box__list-title">
+                      История призраков
+                    </h3>
+                    <p class="questions-box__list-adress">
+                      Новослободская, 2а
+                    </p>
+                    <div class="questions-box__description">
+                      <span class="questions-box__description-people">
+                        5–6 чел
+                      </span>
+                      <span class="questions-box__description-level">
+                        легкий
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </li>
+                </a>
+              </li>
 
-            <li class="questions-box__list-item">
-              <a class="questions-box__list-link questions-box__list-link--secret" href="secret-quest.html">
-                <div class="questions-box__list-content">
-                  <h3 class="questions-box__list-title">
-                    Тайны старого особняка
-                  </h3>
-                  <p class="questions-box__list-adress">
-                    пр. Ленина, 37
-                  </p>
-                  <div class="questions-box__description">
-                    <span class="questions-box__description-people">
-                      2–5 чел
-                    </span>
-                    <span class="questions-box__description-level">
-                      легкий
-                    </span>
+              <li class="questions-box__list-item">
+                <a class="questions-box__list-link questions-box__list-link--secret" href="secret-quest.html">
+                  <div class="questions-box__list-content">
+                    <h3 class="questions-box__list-title">
+                      Тайны старого особняка
+                    </h3>
+                    <p class="questions-box__list-adress">
+                      пр. Ленина, 37
+                    </p>
+                    <div class="questions-box__description">
+                      <span class="questions-box__description-people">
+                        2–5 чел
+                      </span>
+                      <span class="questions-box__description-level">
+                        легкий
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </li>
+                </a>
+              </li>
 
-            <li class="questions-box__list-item">
-              <span class="questions-box__list-hit">Хит</span>
-              <a class="questions-box__list-link questions-box__list-link--hut" href="#">
-                <div class="questions-box__list-content">
-                  <h3 class="questions-box__list-title">
-                    Хижина в лесу
-                  </h3>
-                  <p class="questions-box__list-adress">
-                    Верхнетецкая, 32
-                  </p>
-                  <div class="questions-box__description">
-                    <span class="questions-box__description-people">
-                      4–7 чел
-                    </span>
-                    <span class="questions-box__description-level">
-                      средний
-                    </span>
+              <li class="questions-box__list-item">
+                <span class="questions-box__list-hit">Хит</span>
+                <a class="questions-box__list-link questions-box__list-link--hut" href="#">
+                  <div class="questions-box__list-content">
+                    <h3 class="questions-box__list-title">
+                      Хижина в лесу
+                    </h3>
+                    <p class="questions-box__list-adress">
+                      Верхнетецкая, 32
+                    </p>
+                    <div class="questions-box__description">
+                      <span class="questions-box__description-people">
+                        4–7 чел
+                      </span>
+                      <span class="questions-box__description-level">
+                        средний
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </li>
+                </a>
+              </li>
 
-            <li class="questions-box__list-item">
-              <span class="questions-box__list-hit">Хит</span>
-              <a class="questions-box__list-link questions-box__list-link--experiments" href="experiments-quest.html">
-                <div class="questions-box__list-content">
-                  <h3 class="questions-box__list-title">
-                    Фатальный эксперимент
-                  </h3>
-                  <p class="questions-box__list-adress">
-                    Верхнетецкая, 32
-                  </p>
-                  <div class="questions-box__description">
-                    <span class="questions-box__description-people">
-                      5–8 чел
-                    </span>
-                    <span class="questions-box__description-level">
-                      сложный
-                    </span>
+              <li class="questions-box__list-item">
+                <span class="questions-box__list-hit">Хит</span>
+                <a class="questions-box__list-link questions-box__list-link--experiments" href="experiments-quest.html">
+                  <div class="questions-box__list-content">
+                    <h3 class="questions-box__list-title">
+                      Фатальный эксперимент
+                    </h3>
+                    <p class="questions-box__list-adress">
+                      Верхнетецкая, 32
+                    </p>
+                    <div class="questions-box__description">
+                      <span class="questions-box__description-people">
+                        5–8 чел
+                      </span>
+                      <span class="questions-box__description-level">
+                        сложный
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </li>
+                </a>
+              </li>
 
-            <li class="questions-box__list-item">
-              <a class="questions-box__list-link questions-box__list-link--metro" href="#">
-                <div class="questions-box__list-content">
-                  <h3 class="questions-box__list-title">
-                    Метро 2033
-                  </h3>
-                  <p class="questions-box__list-adress">
-                    Новослободская, 2а
-                  </p>
-                  <div class="questions-box__description">
-                    <span class="questions-box__description-people">
-                      6 –8 чел
-                    </span>
-                    <span class="questions-box__description-level">
-                      средний
-                    </span>
+              <li class="questions-box__list-item">
+                <a class="questions-box__list-link questions-box__list-link--metro" href="#">
+                  <div class="questions-box__list-content">
+                    <h3 class="questions-box__list-title">
+                      Метро 2033
+                    </h3>
+                    <p class="questions-box__list-adress">
+                      Новослободская, 2а
+                    </p>
+                    <div class="questions-box__description">
+                      <span class="questions-box__description-people">
+                        6 –8 чел
+                      </span>
+                      <span class="questions-box__description-level">
+                        средний
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </li>
+                </a>
+              </li>
 
-            <li class="questions-box__list-item">
-              <a class="questions-box__list-link questions-box__list-link--attic" href="#">
-                <div class="questions-box__list-content">
-                  <h3 class="questions-box__list-title">
-                    Старый чердак
-                  </h3>
-                  <p class="questions-box__list-adress">
-                    Новослободская, 2а
-                  </p>
-                  <div class="questions-box__description">
-                    <span class="questions-box__description-people">
-                      2–3 чел
-                    </span>
-                    <span class="questions-box__description-level">
-                      легкий
-                    </span>
+              <li class="questions-box__list-item">
+                <a class="questions-box__list-link questions-box__list-link--attic" href="#">
+                  <div class="questions-box__list-content">
+                    <h3 class="questions-box__list-title">
+                      Старый чердак
+                    </h3>
+                    <p class="questions-box__list-adress">
+                      Новослободская, 2а
+                    </p>
+                    <div class="questions-box__description">
+                      <span class="questions-box__description-people">
+                        2–3 чел
+                      </span>
+                      <span class="questions-box__description-level">
+                        легкий
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </li>
+                </a>
+              </li>
 
-            <li class="questions-box__list-item">
-              <a class="questions-box__list-link questions-box__list-link--boundary" href="#">
-                <div class="questions-box__list-content">
-                  <h3 class="questions-box__list-title">
-                    Последний рубеж
-                  </h3>
-                  <p class="questions-box__list-adress">
-                    Верхнетецкая, 32
-                  </p>
-                  <div class="questions-box__description">
-                    <span class="questions-box__description-people">
-                      4–7 чел
-                    </span>
-                    <span class="questions-box__description-level">
-                      средний
-                    </span>
+              <li class="questions-box__list-item">
+                <a class="questions-box__list-link questions-box__list-link--boundary" href="#">
+                  <div class="questions-box__list-content">
+                    <h3 class="questions-box__list-title">
+                      Последний рубеж
+                    </h3>
+                    <p class="questions-box__list-adress">
+                      Верхнетецкая, 32
+                    </p>
+                    <div class="questions-box__description">
+                      <span class="questions-box__description-people">
+                        4–7 чел
+                      </span>
+                      <span class="questions-box__description-level">
+                        средний
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </li>
+                </a>
+              </li>
 
-            <li class="questions-box__list-item">
-              <a class="questions-box__list-link questions-box__list-link--mars" href="#">
-                <div class="questions-box__list-content">
-                  <h3 class="questions-box__list-title">
-                    Марс-2056
-                  </h3>
-                  <p class="questions-box__list-adress">
-                    пр. Ленина, 37
-                  </p>
-                  <div class="questions-box__description">
-                    <span class="questions-box__description-people">
-                      2–4 чел
-                    </span>
-                    <span class="questions-box__description-level">
-                      легкий
-                    </span>
+              <li class="questions-box__list-item">
+                <a class="questions-box__list-link questions-box__list-link--mars" href="#">
+                  <div class="questions-box__list-content">
+                    <h3 class="questions-box__list-title">
+                      Марс-2056
+                    </h3>
+                    <p class="questions-box__list-adress">
+                      пр. Ленина, 37
+                    </p>
+                    <div class="questions-box__description">
+                      <span class="questions-box__description-people">
+                        2–4 чел
+                      </span>
+                      <span class="questions-box__description-level">
+                        легкий
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </li>
+                </a>
+              </li>
 
-          </ul>  <!--/.questions-box__list" -->
+            </ul>  <!--/.questions-box__list" -->
 
-        </div>  <!--/.questions-box__innner" -->
-      </div>  <!--/.container" -->
-    </section>  <!--/.questions-box -->
+          </div>  <!--/.questions-box__innner" -->
+        </div>  <!--/.container" -->
+      </section>  <!--/.questions-box -->
+    </div>
 
   </main>
 
-  <footer class="intro-page__footer footer">
+  <footer class="footer">
     <div class="container">
       <div class="footer__inner">
 
@@ -455,7 +462,7 @@
 
       <ul class="city-popap__list">
         <li class="city-popap__list-item">
-          <a class="city-popap__list-link your-city__list-link--active" href="#">
+          <a class="city-popap__list-link city-popap__list-link--active" href="#">
             Новосибирск
           </a>
         </li>
@@ -507,14 +514,14 @@
         Задайте вопрос
       </h2>
 
-      <form class="question-popap__form" method="get" action="https://echo.htmlacademy.ru">
+      <form class="question-popap__form" method="get" action="https://echo.htmlacademy.ru" autocomplete="on">
         <ul class="question-popap__form-list">
 
           <li class="question-popap__form-item">
             <label class="question-popap__form-label" for="name">
               Чтобы мы смогли обращаться к вам, оставьте ваше имя
             </label>
-            <input class="question-popap__form-input question-popap__form-input--name question-popap__form-input--error js-name" id="name" placeholder="Имя" type="text" name="Имя:" data-rule="name">
+            <input id="name" placeholder="Имя" type="text" name="Имя:" data-rule="name">
             <p class="error error-name">
               Введён некорректное имя, попробуйте заново
             </p>
@@ -524,7 +531,7 @@
             <label class="question-popap__form-label" for="mail">
               Чтобы вы получили ответ, оставьте ваш e-mail
             </label>
-            <input class="question-popap__form-input question-popap__form-input--mail js-email" id="mail" placeholder="E-mail" type="text" name="E-mail:" data-rule="mail">
+            <input id="mail" placeholder="E-mail" type="text" name="E-mail:" data-rule="mail">
             <p class="error error-email">
               Введён некорректный e-mail, попробуйте заново
             </p>
@@ -534,11 +541,11 @@
             <label class="question-popap__form-label" for="question">
               Ваш вопрос:
             </label>
-            <textarea class="question-popap__form-textarea question-popap__form-textarea--question js-text" id="question" placeholder="Начните вводить ..." name="Вопрос:"></textarea>
+            <textarea id="question" placeholder="Начните вводить ..." name="Вопрос:"></textarea>
+            <p class="error error-text">
+              Введён некорректный вопрос, попробуйте заново
+            </p>
           </li>
-          <p class="error error-text">
-            Введён некорректный вопрос, попробуйте заново
-          </p>
 
         </ul>
 
@@ -558,9 +565,7 @@
     </div>  <!--/.question-popap__inner -->
   </section>  <!--/.your-question -->
 
-
   <script src="js/script.js"></script>
-  <!-- <script src="js/jquery-3.4.1.min.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 

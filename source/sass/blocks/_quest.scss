@@ -6,46 +6,6 @@
   height: 100vh;
 }
 
-.quest--maniac {
-  height: 100vh;
-
-  background-image:
-    radial-gradient(43.88% 64.96% at 22.69% 38.28%, rgba(0, 0, 0, 0.04) 47.51%, rgba(0, 0, 0, 0.76) 91.16%),
-    url("../img/quest-bg-desktop-maniac.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.quest--secret {
-  height: 100vh;
-
-  background-image:
-    radial-gradient(43.88% 64.96% at 22.69% 38.28%, rgba(0, 0, 0, 0.04) 47.51%, rgba(0, 0, 0, 0.76) 91.16%),
-    url("../img/quest-bg-desktop-secret.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.quest--ritual {
-  height: 100vh;
-
-  background-image:
-    radial-gradient(43.88% 64.96% at 22.69% 38.28%, rgba(0, 0, 0, 0.04) 47.51%, rgba(0, 0, 0, 0.76) 91.16%),
-    url("../img/quest-bg-desctop-ritual.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.quest--experiments {
-  height: 100vh;
-
-  background-image:
-    radial-gradient(43.88% 64.96% at 22.69% 38.28%, rgba(0, 0, 0, 0.04) 47.51%, rgba(0, 0, 0, 0.76) 91.16%),
-    url("../img/quest-bg-desktop-experiments.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .quest__inner {
   max-width: 600px;
   margin-top: -26px;
@@ -57,7 +17,7 @@
   display: none;
 }
 
-.quest__subtitle {
+.quest h2 {
   margin-top: 0;
   margin-bottom: 13px;
   margin-left: 6px;
@@ -67,7 +27,7 @@
   color: $color-orange;
 }
 
-.quest__title {
+.quest h1 {
   margin-top: 0;
   margin-bottom: 22px;
 
@@ -98,11 +58,11 @@
   padding-bottom: 10px;
 }
 
-.quest__list-item:nth-child(2) {
+.quest__list-item--border {
   position: relative;
 }
 
-.quest__list-item:nth-child(2)::before {
+.quest__list-item--border::before {
   position: absolute;
   top: 6px;
   left: -27px;
@@ -114,7 +74,7 @@
   background-color: rgba($color-white, 0.36);
 }
 
-.quest__list-item:nth-child(2)::after {
+.quest__list-item--border::after {
   position: absolute;
   top: 6px;
   right: -24px;
@@ -182,7 +142,7 @@
   background-size: cover;
 }
 
-.quest__text {
+.quest p {
   max-width: 522px;
   margin-top: 0;
   margin-bottom: 41px;
@@ -198,11 +158,118 @@
   margin-left: 33px;
 }
 
+.quest--maniac {
+  height: 100vh;
+
+  background-image:
+    radial-gradient(43.88% 64.96% at 22.69% 38.28%, rgba(0, 0, 0, 0.04) 47.51%, rgba(0, 0, 0, 0.76) 91.16%),
+    url("../img/quest-bg-desktop-maniac.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quest--secret {
+  height: 100vh;
+
+  background-image:
+    radial-gradient(43.88% 64.96% at 22.69% 38.28%, rgba(0, 0, 0, 0.04) 47.51%, rgba(0, 0, 0, 0.76) 91.16%),
+    url("../img/quest-bg-desktop-secret.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quest--secret .quest__inner {
+  margin-top: 61px;
+}
+
+.quest--secret h2 {
+  margin-bottom: 25px;
+  margin-left: -1px;
+}
+
+.quest--secret h1 {
+  margin-bottom: 15px;
+}
+
+.quest--secret .quest__list {
+  margin-left: 35px;
+  max-width: 365px;
+}
+
+.quest--ritual {
+  height: 100vh;
+
+  background-image:
+    radial-gradient(43.88% 64.96% at 22.69% 38.28%, rgba(0, 0, 0, 0.04) 47.51%, rgba(0, 0, 0, 0.76) 91.16%),
+    url("../img/quest-bg-desctop-ritual.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quest--ritual .quest__inner {
+  margin-top: -29px;
+}
+
+.quest--ritual h2 {
+  margin-bottom: 25px;
+  margin-left: -1px;
+}
+
+.quest--ritual h1 {
+  margin-bottom: 16px;
+}
+
+.quest--ritual .quest__list {
+  margin-left: 38px;
+}
+
+.quest--experiments {
+  height: 100vh;
+
+  background-image:
+    radial-gradient(43.88% 64.96% at 22.69% 38.28%, rgba(0, 0, 0, 0.04) 47.51%, rgba(0, 0, 0, 0.76) 91.16%),
+    url("../img/quest-bg-desktop-experiments.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quest--experiments .quest__inner {
+  max-width: 680px;
+  margin-top: 22px;
+  margin-right: 53px;
+}
+
+.quest--experiments h2 {
+  margin-bottom: 25px;
+  margin-left: -2px;
+}
+
+.quest--experiments h1 {
+  margin-bottom: 15px;
+}
+
+.quest--experiments .quest__list {
+  margin-left: 42px;
+}
+
+.quest--experiments p {
+  margin-bottom: 40px;
+  margin-left: 39px;
+}
+
+.quest--experiments .quest__btn {
+  margin-left: 39px;
+}
+
 /* =====================================================================================
 Media max-width: 1023px*/
 @media (max-width: $tablet-width) {
   .quest__inner {
     margin-top: 0;
+    margin-right: 0;
+  }
+
+  .quest--experiments .quest__inner {
     margin-right: 0;
   }
 }
@@ -213,31 +280,6 @@ Media max-width: 767px*/
   .quest {
     justify-content: flex-start;
     padding-top: 88px;
-  }
-
-  .quest--maniac {
-    background-image:
-      linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%),
-      url("../img/quest-bg-mobile-maniac.jpg");
-    background-position: top, center;
-  }
-
-  .quest--secret {
-    background-image:
-      linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%),
-      url("../img/quest-bg-mobile-secret.jpg");
-  }
-
-  .quest--ritual {
-    background-image:
-      linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%),
-      url("../img/quest-bg-mobile-ritual.jpg");
-  }
-
-  .quest--experiments {
-    background-image:
-      linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%),
-      url("../img/quest-bg-mobile-experiments.jpg");
   }
 
   .quest__inner {
@@ -271,12 +313,12 @@ Media max-width: 767px*/
     background-repeat: no-repeat;
   }
 
-  .quest__subtitle {
+  .quest h2 {
     margin-top: 295px;
     margin-bottom: 14px;
   }
 
-  .quest__title {
+  .quest h1 {
     margin-bottom: 4px;
     margin-left: 6px;
 
@@ -333,7 +375,7 @@ Media max-width: 767px*/
     left: 37px;
   }
 
-  .quest__text {
+  .quest p {
     max-width: 345px;
     margin-bottom: 19px;
     margin-left: 5px;
@@ -341,5 +383,121 @@ Media max-width: 767px*/
 
   .quest__btn {
     margin-left: 5px;
+  }
+
+  .quest--maniac {
+    background-image:
+      linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%),
+      url("../img/quest-bg-mobile-maniac.jpg");
+    background-position: top, center;
+  }
+
+  .quest--secret {
+    background-image:
+      linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%),
+      url("../img/quest-bg-mobile-secret.jpg");
+  }
+
+  .quest--secret .quest__inner {
+    margin-top: 7px;
+  }
+
+  .quest--secret .quest__link {
+    padding-left: 21px;
+  }
+
+  .quest--secret h2 {
+    margin-top: 184px;
+    margin-bottom: 28px;
+    margin-left: 6px;
+  }
+
+  .quest--secret h1 {
+    max-width: 250px;
+    margin-bottom: 1px;
+    margin-left: 7px;
+    line-height: 46px;
+  }
+
+  .quest--secret .quest__list {
+    max-width: 338px;
+    margin-left: 3px;
+  }
+
+  .quest--secret .quest__list-text--level {
+    padding-left: 22px;
+    padding-right: 25px;
+  }
+
+  .quest--secret p {
+    margin-left: 7px;
+  }
+
+  .quest--secret .quest__btn {
+    margin-left: 7px;
+  }
+
+  .quest--ritual {
+    background-image:
+      linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%),
+      url("../img/quest-bg-mobile-ritual.jpg");
+  }
+
+  .quest--ritual .quest__inner {
+    margin-top: 8px;
+  }
+
+  .quest--ritual .quest__link {
+    padding-left: 22px;
+  }
+
+  .quest--ritual h2 {
+    margin-top: 291px;
+    margin-bottom: 16px;
+    margin-left: 7px;
+  }
+
+  .quest--ritual h1 {
+    margin-bottom: 3px;
+  }
+
+  .quest--ritual .quest__list {
+    margin-left: 4px;
+  }
+
+  .quest--ritual p {
+    margin-left: 7px;
+  }
+
+  .quest--experiments {
+    background-image:
+      linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%),
+      url("../img/quest-bg-mobile-experiments.jpg");
+  }
+
+  .quest--experiments h2 {
+    margin-top: 294px;
+    margin-bottom: 12px;
+    margin-left: 16px;
+  }
+
+  .quest--experiments h1 {
+    margin-bottom: 2px;
+
+    line-height: 46px;
+  }
+
+  .quest--experiments .quest__list {
+    margin-left: 0;
+    max-width: 341px;
+  }
+
+  .quest--experiments p {
+    max-width: 340px;
+    margin-left: 6px;
+  }
+
+  .quest--experiments .quest__btn {
+    margin-left: 6px;
   }
 }

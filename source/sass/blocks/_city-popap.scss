@@ -2,7 +2,7 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  z-index: 1000;
+  z-index: 100;
 
   max-width: 480px;
   width: 100%;
@@ -122,11 +122,6 @@
   color: rgba($color-white, 0.32);
 
   transition: all 0.1s linear;
-}
-
-.city__list-link--active {
-  color: $color-white;
-  border-bottom: 2px solid $color-orange;
 }
 
 .city-popap__list-link:hover,

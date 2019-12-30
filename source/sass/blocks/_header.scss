@@ -6,18 +6,24 @@
   padding-top: 20px;
 }
 
+.header--bg {
+  background: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
+
+  z-index: 5;
+}
+
 .header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header__link:hover .header__logo-img,
-.header__link:focus .header__logo-img {
+.header__link:hover img,
+.header__link:focus img {
   opacity: 0.8;
 }
 
-.header__link:active .header__logo-img {
+.header__link:active img {
   opacity: 0.6;
 }
 
@@ -133,7 +139,7 @@ Media max-width: 1023px*/
     line-height: 13px;
   }
 
-  .header__logo-img {
+  .header__link img {
     height: 36px;
     width: 96px;
   }
@@ -159,7 +165,7 @@ Media max-width: 767px*/
     flex-basis: 50%;
   }
 
-  .header__logo-img {
+  .header__link img {
     height: 39px;
     width: 110px;
   }
