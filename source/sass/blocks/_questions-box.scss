@@ -70,66 +70,132 @@
   background-image:
     linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
     url("../img/quest-bg-card-crypt.jpg");
+
+  @media (min-resolution: $retina-dppx) {
+    background-image:
+      linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
+      url("../img/quest-bg-card-crypt2x.jpg");
+  }
 }
 
 .questions-box__list-link--maniac {
   background-image:
     linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
     url("../img/quest-bg-card-maniac.jpg");
+
+  @media (min-resolution: $retina-dppx) {
+    background-image:
+      linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
+      url("../img/quest-bg-card-maniac2x.jpg");
+  }
 }
 
 .questions-box__list-link--ritual {
   background-image:
     linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
     url("../img/quest-bg-card-ritual.jpg");
+
+  @media (min-resolution: $retina-dppx) {
+    background-image:
+      linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
+      url("../img/quest-bg-card-ritual2x.jpg");
+  }
 }
 
 .questions-box__list-link--history {
   background-image:
     linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
     url("../img/quest-bg-card-history.jpg");
+
+  @media (min-resolution: $retina-dppx) {
+    background-image:
+      linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
+      url("../img/quest-bg-card-history2x.jpg");
+  }
 }
 
 .questions-box__list-link--secret {
   background-image:
     linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
     url("../img/quest-bg-card-secret.jpg");
+
+  @media (min-resolution: $retina-dppx) {
+    background-image:
+      linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
+      url("../img/quest-bg-card-secret2x.jpg");
+  }
 }
 
 .questions-box__list-link--hut {
   background-image:
     linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
     url("../img/quest-bg-card-hut.jpg");
+
+  @media (min-resolution: $retina-dppx) {
+    background-image:
+      linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
+      url("../img/quest-bg-card-hut2x.jpg");
+  }
 }
 
 .questions-box__list-link--experiments {
   background-image:
     linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
     url("../img/quest-bg-card-experiments.jpg");
+
+  @media (min-resolution: $retina-dppx) {
+    background-image:
+      linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
+      url("../img/quest-bg-card-experiments2x.jpg");
+  }
 }
 
 .questions-box__list-link--metro {
   background-image:
     linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
     url("../img/quest-bg-card-metro.jpg");
+
+  @media (min-resolution: $retina-dppx) {
+    background-image:
+      linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
+      url("../img/quest-bg-card-metro2x.jpg");
+  }
 }
 
 .questions-box__list-link--attic {
   background-image:
     linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
     url("../img/quest-bg-card-attic.jpg");
+
+  @media (min-resolution: $retina-dppx) {
+    background-image:
+      linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
+      url("../img/quest-bg-card-attic2x.jpg");
+  }
 }
 
 .questions-box__list-link--boundary {
   background-image:
     linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
     url("../img/quest-bg-card-boundary.jpg");
+
+  @media (min-resolution: $retina-dppx) {
+    background-image:
+      linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
+      url("../img/quest-bg-card-boundary2x.jpg");
+  }
 }
 
 .questions-box__list-link--mars {
   background-image:
     linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
     url("../img/quest-bg-card-mars.jpg");
+
+  @media (min-resolution: $retina-dppx) {
+    background-image:
+      linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%),
+      url("../img/quest-bg-card-mars2x.jpg");
+  }
 }
 
 .questions-box__list-content {
