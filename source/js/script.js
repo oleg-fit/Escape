@@ -16,6 +16,8 @@ var emailInput = form.querySelector('#mail');
 var emailErrorBlock = form.querySelector('.error-email');
 var textInput = form.querySelector('#question');
 var textErrorBlock = form.querySelector('.error-text');
+var agreeInput = form.querySelector('#agree');
+var textErrorAgree = form.querySelector('.error-agree');
 
 if (linkYourCity) {
 
@@ -57,6 +59,7 @@ if (linkQuestion) {
 
   linkQuestion.addEventListener('click', function (evt) {
     evt.preventDefault();
+    bodyPage.classList.add('body-js--overlay');
     popapQuestion.classList.add('question-popap--show');
     nameInput.focus();
     overlayPopap.classList.add('overlay-popap--show');
@@ -67,6 +70,7 @@ if (linkClosePopapQuestion) {
 
   linkClosePopapQuestion.addEventListener('click', function (evt) {
     evt.preventDefault();
+    bodyPage.classList.remove('body-js--overlay');
     popapQuestion.classList.remove('question-popap--show');
     overlayPopap.classList.remove('overlay-popap--show');
   });
@@ -75,6 +79,7 @@ if (linkClosePopapQuestion) {
     if (evt.keyCode === 27) {
       if (popapQuestion.classList.contains('question-popap--show')) {
         evt.preventDefault();
+        bodyPage.classList.remove('body-js--overlay');
         popapQuestion.classList.remove('question-popap--show');
         overlayPopap.classList.remove('overlay-popap--show');
       }
@@ -84,6 +89,7 @@ if (linkClosePopapQuestion) {
   overlayPopap.addEventListener('click', function (evt) {
     if (popapQuestion.classList.contains('question-popap--show')) {
       evt.preventDefault();
+      bodyPage.classList.remove('body-js--overlay');
       popapQuestion.classList.remove('question-popap--show');
       overlayPopap.classList.remove('overlay-popap--show');
     }
@@ -104,7 +110,6 @@ if (linkBurgerMenu) {
 
 
 // Валидация формы
-
 
 function validateEmail(email) {
   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -140,6 +145,13 @@ function validation(e) {
     textErrorBlock.classList.remove('error-text--show');
     textInput.classList.remove('input--invalid');
     textInput.classList.add('input--valid');
+  }
+
+  if (!agreeInput.checked) {
+    e.preventDefault();
+    textErrorAgree.classList.add('error-agree--show');
+  } else {
+    textErrorAgree.classList.remove('error-agree--show');
   }
 }
 

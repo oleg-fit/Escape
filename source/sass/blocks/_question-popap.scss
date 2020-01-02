@@ -35,7 +35,7 @@
   list-style: none;
 }
 
-.question-popap__form-list .error {
+.question-popap__form .error {
   display: none;
 
   margin-top: -31px;
@@ -47,16 +47,21 @@
   color: #f2901d;
 }
 
-.question-popap__form-list .error-name--show {
+.question-popap__form .error-name--show {
   display: block;
 }
 
-.question-popap__form-list .error-email--show {
+.question-popap__form .error-email--show {
   display: block;
 }
 
-.question-popap__form-list .error-text--show {
+.question-popap__form .error-text--show {
   display: block;
+}
+
+.question-popap__form .error-agree--show {
+  display: block;
+  margin-top: 1px;
 }
 
 .question-popap__form-item {
@@ -176,31 +181,31 @@
   transform: translate(-50%, -50%);
 }
 
-.question-popap__input:checked + .question-popap__check-box {
+.question-popap input:checked + .question-popap__check-box {
   background: $color-orange;
 }
 
-.question-popap__input:checked + .question-popap__check-box::after {
+.question-popap input:checked + .question-popap__check-box::after {
   display: block;
 }
 
-.question-popap__input:focus + .question-popap__check-box {
+.question-popap input:focus + .question-popap__check-box {
   background: rgba($color-orange, 0.7);
 }
 
-.question-popap__input:checked:focus + .question-popap__check-box {
+.question-popap input:checked:focus + .question-popap__check-box {
   background: $color-orange;
 }
 
-.question-popap__input:disabled + .question-popap__check-box {
+.question-popap input:disabled + .question-popap__check-box {
   background: rgba($color-orange, 0.2);
 }
 
-.question-popap__input:checked:disabled + .question-popap__check-box {
+.question-popap input:checked:disabled + .question-popap__check-box {
   background: rgba($color-orange, 0.2);
 }
 
-.question-popap__input:checked:disabled + .question-popap__check-box::after {
+.question-popap input:checked:disabled + .question-popap__check-box::after {
   opacity: 0.5;
 }
 
