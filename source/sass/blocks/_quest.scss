@@ -368,14 +368,14 @@ Media max-width: 767px*/
     align-items: flex-start;
   }
 
-  .quest__list-item:nth-child(2)::before {
+  .quest__list-item--border::before {
     top: 18px;
     left: -13px;
 
     height: 49px;
   }
 
-  .quest__list-item:nth-child(2)::after {
+  .quest__list-item--border::after {
     top: 15px;
     right: -9px;
 
