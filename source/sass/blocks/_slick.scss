@@ -17,7 +17,7 @@
   border-right: none;
 }
 
-.slick__item-text {
+.slick__item-link {
   display: flex;
   align-items: center;
 
@@ -28,7 +28,7 @@
   color: $color-white-dark;
 }
 
-.slick__item-text::before {
+.slick__item-link::before {
   margin-right: 12px;
 
   content: "";
@@ -40,43 +40,56 @@
   background-size: cover;
 }
 
-.slick__item-text--all::before {
+.slick__item-link--all::before {
   background-image: url("../img/icon-quest-all-quests.svg");
 }
 
-.slick__item-text--adventure::before {
+.slick__item-link--adventure::before {
   width: 36px;
   height: 30px;
 
   background-image: url("../img/icon-quest-adventure.svg");
 }
 
-.slick__item-text--horror::before {
+.slick__item-link--horror::before {
   width: 30px;
   height: 30px;
 
   background-image: url("../img/icon-quest-horror.svg");
 }
 
-.slick__item-text--mysticism::before {
+.slick__item-link--mysticism::before {
   width: 30px;
   height: 30px;
 
   background-image: url("../img/icon-quest-mysticism.svg");
 }
 
-.slick__item-text--detective::before {
+.slick__item-link--detective::before {
   width: 40px;
   height: 30px;
 
   background-image: url("../img/icon-quest-detective.svg");
 }
 
-.slick__item-text--sci::before {
+.slick__item-link--sci::before {
   width: 28px;
   height: 30px;
 
   background-image: url("../img/icon-quest-scifi.svg");
+}
+
+.slick__item-link span {
+  border-bottom: 2px solid transparent;
+}
+
+.slick__item-link:hover span,
+.slick__item-link:focus span {
+  border-bottom: 2px solid $color-orange;
+}
+
+.slick__item-link:active {
+  opacity: 0.8;
 }
 
 /* =====================================================================================
@@ -97,32 +110,32 @@ Media max-width: 1023px*/
     padding-right: 0;
   }
 
-  .slick__item-text--all::before {
+  .slick__item-link--all::before {
     width: 20.8px;
     height: 24px;
   }
 
-  .slick__item-text--adventure::before {
+  .slick__item-link--adventure::before {
     width: 28.8px;
     height: 24px;
   }
 
-  .slick__item-text--horror::before {
+  .slick__item-link--horror::before {
     width: 24px;
     height: 24px;
   }
 
-  .slick__item-text--mysticism::before {
+  .slick__item-link--mysticism::before {
     width: 24px;
     height: 24px;
   }
 
-  .slick__item-text--detective::before {
+  .slick__item-link--detective::before {
     width: 32px;
     height: 24px;
   }
 
-  .slick__item-text--sci::before {
+  .slick__item-link--sci::before {
     width: 22.4px;
     height: 24px;
   }
