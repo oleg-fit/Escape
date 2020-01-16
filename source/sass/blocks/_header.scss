@@ -111,12 +111,12 @@
 
 .header__contacts-tel {
   margin-top: 0;
-  margin-right: 7px;
+  margin-right: 6px;
   margin-bottom: 0;
 
   font-weight: 600;
   line-height: 16px;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.4px;
 
   color: $color-white-light;
 }
@@ -134,7 +134,7 @@ Media max-width: 1023px*/
 @media (max-width: $tablet-width) {
   .header__contacts-city {
     margin-right: 12px;
-
+font-weight: normal;
     font-size: 11px;
     line-height: 13px;
   }

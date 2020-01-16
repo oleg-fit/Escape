@@ -30,7 +30,7 @@
 .intro h1 {
   max-width: 540px;
   margin-top: 0;
-  margin-bottom: 32px;
+  margin-bottom: 36px;
 
   font-weight: 800;
   font-size: 64px;
@@ -43,11 +43,12 @@
 .intro p {
   max-width: 468px;
   margin-top: 0;
-  margin-bottom: 66px;
+  margin-bottom: 70px;
 
   font-weight: 500;
   font-size: 17px;
   line-height: 25px;
+  letter-spacing: -0.15px;
 
   color: $color-white-dark;
 }
@@ -60,6 +61,8 @@
 Media max-width: 767px*/
 @media (max-width: $mobile-width) {
   .intro {
+    min-height: 640px;
+
     background-image:
       linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%),
       radial-gradient(41.41% 41.41% at 66.25% 48.18%, rgba(0, 0, 0, 0) 2.48%, rgba(0, 0, 0, 0) 63.56%, rgba(0, 0, 0, 0.71) 97.05%),
@@ -69,6 +72,7 @@ Media max-width: 767px*/
   .intro__inner {
     justify-content: flex-end;
 
+    min-height: 640px;
     padding-left: 0;
   }
 

@@ -1,9 +1,9 @@
 .order-block {
-  height: 100vh;
+  min-height: 100vh;
 
   background-image: url("../img/quest-bg-desktop-maniac-order.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .order-block__inner {
@@ -288,8 +288,6 @@
 Media max-width: 1023px*/
 @media (max-width: $tablet-width) {
   .order-block {
-    height: 100vh;
-
     background-image:
       linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%),
       radial-gradient(43.88% 64.96% at 22.69% 38.28%, rgba(0, 0, 0, 0.04) 47.51%, rgba(0, 0, 0, 0.76) 91.16%),
