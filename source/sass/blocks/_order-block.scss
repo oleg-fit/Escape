@@ -239,6 +239,7 @@
 
 .order-block__radio {
   display: block;
+  min-height: 40px;
   width: 110px;
   padding-top: 10px;
   padding-bottom: 8px;
@@ -259,27 +260,27 @@
 }
 
 .order-block__input:checked + .order-block__radio {
-  border-color: transparent;
+  border: none;
   background: linear-gradient(180deg, #2cdb52 0%, #13ba19 100%);
 }
 
 .order-block__input:focus + .order-block__radio {
-  border-color: transparent;
+  border: none;
   background: linear-gradient(180deg, #6d9977 0%, #13ba19 100%);
 }
 
 .order-block__input:checked:focus + .order-block__radio {
-  border-color: transparent;
+  border: none;
   background: linear-gradient(180deg, #6d9977 0%, #13ba19 100%);
 }
 
 .order-block__input:disabled + .order-block__radio {
-  border-color: transparent;
+  border: none;
   background: linear-gradient(172.29deg, #f2890f 9.78%, #b8600f 79.81%);
 }
 
 .filter-power__input:checked:disabled + .filter-power__radio {
-  border-color: transparent;
+  border: none;
   background: linear-gradient(172.29deg, #f2890f 9.78%, #b8600f 79.81%);
 }
 

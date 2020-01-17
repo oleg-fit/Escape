@@ -8,6 +8,7 @@ var linkClosePopapQuestion = document.querySelector('.question-popap .popap-clos
 var overlayPopap = document.querySelector('.overlay-popap');
 var linkBurgerMenu = document.querySelector('.header__burger');
 var bodyPage = document.querySelector('.body-js');
+var linksCity = document.querySelectorAll('.city-popap__list-link');
 
 var form = document.querySelector('.question-popap__form');
 
@@ -102,6 +103,19 @@ if (linkBurgerMenu) {
       bodyPage.classList.add('opened__header');
     }
   });
+}
+
+if (linksCity) {
+  for (var i = 0; i < linksCity.length; i++) {
+    linksCity[i].addEventListener('click', function (evt) {
+      if (popapYourCity.classList.contains('city-popap--show')) {
+        evt.preventDefault();
+        bodyPage.classList.remove('body-js--overlay');
+        popapYourCity.classList.remove('city-popap--show');
+        overlayPopap.classList.remove('overlay-popap--show');
+      }
+    });
+  }
 }
 
 
