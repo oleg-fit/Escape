@@ -4,11 +4,7 @@
 
   width: 100%;
   padding-top: 20px;
-}
-
-.header--bg {
-  background: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
-
+  background: linear-gradient(#111 0%,rgba(17,17,17,.4) 80%,rgba(17,17,17,0) 97%);
   z-index: 5;
 }
 
@@ -155,6 +151,8 @@ Media max-width: 767px*/
 @media (max-width: $mobile-width) {
   .header {
     padding-top: 27px;
+
+    overflow: auto;
   }
 
   .header__inner {
