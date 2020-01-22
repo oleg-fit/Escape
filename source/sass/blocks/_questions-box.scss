@@ -303,6 +303,14 @@
 
 /* =====================================================================================
 Media max-width: 767px*/
+@media (max-width: 1271px) {
+  .questions-box__list-item {
+    max-width: 328px;
+  }
+}
+
+/* =====================================================================================
+Media max-width: 767px*/
 @media (max-width: $mobile-width) {
   .questions-box__innner {
     padding-top: 39px;
@@ -315,7 +323,7 @@ Media max-width: 767px*/
   }
 
   .questions-box__list-item {
-    max-width: 328px;
+    // max-width: 328px;
     margin-bottom: 15px;
   }
 }
