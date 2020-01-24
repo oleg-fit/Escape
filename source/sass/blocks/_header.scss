@@ -117,6 +117,15 @@
   color: $color-white-light;
 }
 
+.header__contacts-tel:hover,
+.header__contacts-tel:focus {
+  opacity: 0.8;
+}
+
+.header__contacts-tel:active {
+  opacity: 0.6;
+}
+
 /* =====================================================================================
 Media max-width: 1170px*/
 @media (max-width: 1170px) {

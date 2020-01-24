@@ -226,6 +226,7 @@ Media max-width: 767px*/
   .question-popap__inner {
     max-width: 360px;
     width: 100%;
+    margin: 0 auto;
     padding-right: 16px;
     padding-left: 16px;
   }
@@ -253,10 +254,6 @@ Media max-width: 767px*/
 
   .question-popap__form textarea {
     margin-bottom: 29px;
-  }
-
-  .question-popap__form-btn {
-    margin-left: 50px;
   }
 
   .question-popap__label {
