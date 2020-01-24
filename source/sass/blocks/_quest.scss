@@ -155,6 +155,7 @@
 }
 
 .quest__btn {
+  min-height: 60px;
   margin-left: 33px;
 }
 
@@ -304,11 +305,32 @@ Media max-width: 1023px*/
   .quest--experiments .quest__inner {
     margin-right: 0;
   }
+
+  .quest--maniac {
+    background-size: cover;
+  }
+
+  .quest--secret {
+    background-size: cover;
+  }
+
+  .quest--ritual {
+    background-size: cover;
+  }
+
+  .quest--experiments {
+    background-size: cover;
+  }
+
+  .quest--experiments h1 {
+    font-size: 68px;
+  }
+
 }
 
 /* =====================================================================================
 Media max-width: 767px*/
-@media (max-width: $mobile-width) {
+@media (max-width: 600px) {
   .quest {
     justify-content: flex-start;
     padding-top: 88px;

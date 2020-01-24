@@ -251,6 +251,12 @@
 
   border: 2px solid #c4c4c4;
   border-radius: 65px;
+
+  cursor: pointer;
+}
+
+.order-block__radio:hover {
+  opacity: 0.9;
 }
 
 .order-block__price {
