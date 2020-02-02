@@ -1,6 +1,10 @@
 /* =====================================================================================
 Media max-width: 767px*/
 @media (max-width: $mobile-width) {
+  .opened__header {
+    min-height: 100vh;
+  }
+
   .opened__header .header {
     // height: 100vh;
     // background: linear-gradient(163.84deg, #633c0f -68.98%, #24150e 75.12%, #1a140d 132.97%);
