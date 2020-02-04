@@ -3,12 +3,11 @@ Media max-width: 767px*/
 @media (max-width: $mobile-width) {
   .opened__header {
     min-height: 100vh;
-  }
 
-  .opened__header .header {
-    // height: 100vh;
-    // background: linear-gradient(163.84deg, #633c0f -68.98%, #24150e 75.12%, #1a140d 132.97%);
-    // z-index: 100;
+    display: flex;
+    flex-direction: column;
+
+    background: linear-gradient(163.84deg, #633c0f -68.98%, #24150e 75.12%, #1a140d 132.97%);
   }
 
   .opened__header .main-nav {
@@ -22,8 +21,11 @@ Media max-width: 767px*/
   }
 
   .opened__header .footer {
-    display: block;
+    position: static;
     z-index: 100;
+
+    display: block;
+    margin-top: auto;
   }
 
   .opened__header .header__burger::after {
@@ -33,29 +35,11 @@ Media max-width: 767px*/
     background-image: url("../img/burger-open.svg");
   }
 
-
-
-
-
-
-  .opened__header {
-    display: flex;
-    flex-direction: column;
-
-    background: linear-gradient(163.84deg, #633c0f -68.98%, #24150e 75.12%, #1a140d 132.97%);
-  }
-
   .opened__header .header {
     position: static;
   }
 
   .opened__header main {
     display: none;
-  }
-
-  .opened__header .footer {
-    position: static;
-
-    margin-top: auto;
   }
 }

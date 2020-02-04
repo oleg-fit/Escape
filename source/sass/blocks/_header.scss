@@ -4,7 +4,7 @@
 
   width: 100%;
   padding-top: 20px;
-  background: linear-gradient(#111 0%,rgba(17,17,17,.4) 80%,rgba(17,17,17,0) 97%);
+  background: linear-gradient(#111111 0%, rgba(17, 17, 17, .4) 80%, rgba(17, 17, 17 , 0) 97%);
   z-index: 5;
 }
 
@@ -79,7 +79,7 @@
 .header__contacts-text {
   letter-spacing: 0.3px;
 
-  border-bottom:1px dashed transparent;
+  border-bottom: 1px dashed transparent;
   transition: all 0.1s linear;
 }
 
@@ -140,7 +140,8 @@ Media max-width: 1023px*/
 @media (max-width: $tablet-width) {
   .header__contacts-city {
     margin-right: 12px;
-font-weight: normal;
+
+    font-weight: normal;
     font-size: 11px;
     line-height: 13px;
   }
